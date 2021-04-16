@@ -4,7 +4,7 @@
 --hover-color:#717583;
 --active-color:black;
 --secondary-font-color:#ab8356;
---main-font-color:white
+--primary-font-color:white
 }
 
 *{
@@ -21,6 +21,7 @@ header{
   width: 100%;
   color:white
 }
+
 .bot-header nav ul  li{
   display: inline-block;
   padding: 1rem;
@@ -34,6 +35,10 @@ header{
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
+.bot-header nav ul li a svg{
+  width: 10%;
+  /* display: none; */
+}
 .bot-header nav ul li a:hover:after {
   width: 100%;
   background: var(--hover-color);
@@ -45,6 +50,9 @@ header{
   text-transform: uppercase;
   
 }
+.bot-header nav ul  li .icon {
+  display: none;
+}
 .top-header{
   background-color: var(--primary-color);
   display: grid;
@@ -55,11 +63,17 @@ header{
 }
 
 .logo{
-  background-image: url(./2.png);
-  background-position: center;
+  /* background-image: url(./2.png); */
+  /* background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   grid-column:1 / 1;
+  width: 100%;
+}
+.logo img{
+  /* position: relative; */
+  padding: 1rem;
+  max-width:20vh
 }
 
 .contact-header {
@@ -97,7 +111,7 @@ header{
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
-  color: var(--main-font-color);
+  color: var(--primary-font-color);
 }
 
 
@@ -123,4 +137,77 @@ header{
 .bot-header{
   background-color: var(--secondary-color);
 }
+header {
+  background-color: var(--secondary-color);
+}
+#icon svg{
 
+  /* width: 10vw; */
+  height: 10vh;
+  position: relative;
+  /* left: -40vw; */
+  display: none;
+  color:var(--primary-font-color)
+}
+
+.phone-layout{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .top-header  {display: none;}
+  /* .bot-header nav ul li:not(:first-child) {display: none;} */
+   #icon svg {
+    display: inline-block;
+    left: -40vw;
+    position: relative;
+    
+  }
+  .bot-header  nav ul  li{
+    display: block;
+  }
+  .phone-layout{display: block;}
+  .phone-layout img{
+    position: relative;
+    display: inline-block;
+    /* top: -3rem; */
+    height: 10vh;
+    float: right;
+  }
+ /* #icon::after{
+   content: "";
+   background-image: url(./2.png);
+   float: right;
+   min-width: 100px;
+   min-height: 100px;
+ } */
+}
+/* .responsive li a{
+  display: block;
+  position: relative;
+  text-align: left;
+} */
+
+  /* .responsive ul li {
+    position: relative;
+  }
+
+  .responsive ul li  a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+   .bot-header nav ul li a {
+    float: none;
+    display: block;
+    text-align: left;
+  } */
+
+
+
+/* transitions */
+
+.hide{
+  
+display: none;
+}
