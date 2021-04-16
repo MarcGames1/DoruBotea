@@ -71,22 +71,41 @@ header{
   /* height: 100%; */
 }
 
+.contact{
+  border-right: 1px solid var(--secondary-color);
+}
+
 .contact svg{
   color:var(--secondary-font-color);
-  float: left;
+  /* float: left; */
   height: 5vw;
 }
-.contact span{
-  display: flex;
-  text-align: center;
-  padding-left: 2rem;
+.contact a span{
+  display: inline-block;
+  padding-left: 1rem;
 }
+
+
 .contact a{
+  text-align: center;
+  vertical-align: middle;
   text-decoration: none;
   color: var(--main-font-color);
 }
 
-
+.facebook{
+  display: flex;
+ flex-direction: column;
+ 
+}
+.facebook svg{
+  display: inline-block;
+  position: relative;
+  float: none;
+}
+.facebook span{
+  padding: 0!important;
+}
 
 .bot-header{
   background-color: var(--secondary-color);
