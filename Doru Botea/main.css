@@ -1,4 +1,10 @@
+@import url(./css/buttons.css);
 :root{
+  /* --def: #96B7C4; 	 */
+	/* --inv: #fff; */
+
+  --def:#717583;
+  --inv:#ab8356;
 --primary-color:#282E3F;
 --secondary-color:#333a4d;
 --hover-color:#717583;
@@ -9,12 +15,16 @@
 --transparent:rgba(0, 0, 0, 0.7);
 }
 
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
+  /* box-sizing: border-box; */
 }
+  
 
 html{
   width: 100vw !important;
@@ -281,6 +291,7 @@ display: block !important;
 }
 .specializari{
   border-bottom: solid 1px var(--secondary-font-color);
+  
 }
 
 
@@ -307,6 +318,13 @@ section{
   align-items: center;
   justify-content: space-around;
 }
+.hero-text{
+  padding-bottom: 2rem;
+}
+.main-cta{
+  /* padding-top: 2rem; */
+  letter-spacing: 1.1rem;
+}
 /* /FIRST SECTION */
 
 
@@ -315,6 +333,7 @@ section{
 #servicii{
   width: 100vw;
   height: 100vh;
+  z-index: 0;
   background-color: var(--primary-color-transparent);
 }
 .blur{
