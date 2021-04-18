@@ -1,41 +1,41 @@
 .penal {
-    background-image: url(./assets/images/svg/penal.svg);
+    background-image: url(./assets/images/svg/penal.png);
 }
 
 .familial {
-    background-image: url(./assets/images/svg/familie.svg);
+    background-image: url(./assets/images/svg/familie.png);
 }
 
 .civil {
-    background-image: url(./assets/images/svg/civil.svg);
+    background-image: url(./assets/images/svg/civil.png);
 }
 
 .malpraxis {
-    background-image: url(./assets/images/svg/malpraxis.svg);
+    background-image: url(./assets/images/svg/malpraxis.png);
 }
 
 .muncii {
-    background-image: url(./assets/images/svg/munca.svg);
+    background-image: url(./assets/images/svg/munca.png);
 }
 
 .executari {
-    background-image: url(./assets/images/svg/executari.svg);
+    background-image: url(./assets/images/svg/executari.png);
 }
 
 .imobiliar {
-    background-image: url(./assets/images/svg/ballance\ symbol.svg)
+    background-image: url(./assets/images/svg/ballance\ symbol.png)
 }
 
 .contraventional {
-    background-image: url(./assets/images/svg/contraventional.svg);
+    background-image: url(./assets/images/svg/contraventional.png);
 }
 
 .bancar {
-    background-image: url(./assets/images/svg/bancar.svg);
+    background-image: url(./assets/images/svg/bancar.png);
 }
 
 .administrativ {
-    background-image: url(./assets/images/svg/administrativ.svg);
+    background-image: url(./assets/images/svg/administrativ.png);
 }
 
 .administrativ,
@@ -45,10 +45,17 @@
 .imobiliar,
 .imobiliar,
 .executari,
+.familial,
 .malpraxis,
 .muncii,
 .penal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
+    
 }
+    
