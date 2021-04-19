@@ -209,13 +209,20 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
             id="email" 
             placeholder="Adresa de email">
             
-    
-            
+            <!-- checkbox GDPR -->
+            <label for="phone">Telefon:</label>
+
+<input type="tel" id="phone" maxlength=10 name="phone"
+       pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+       required>
+
+<small>Format: 07xx-xxx-xxx</small>
+
     
             
             <!-- <label for="comments">Descrieti Cauza</label> -->
             <textarea required name="comments" id="comments" rows="10" placeholder="Descrieti Cauza" ></textarea>
-            
+            <input type="checkbox" name="gdpr" id="gdpr">
             <button class="btn from-right" type="submit">Trimiteti!</button>
         </form>
     </div> 
@@ -242,7 +249,7 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
                                 
                             </div>
             </div>
-            <a class="main-cta btn from-left appearSecondR" href="#servicii">Completati Formularul Acum</a>
+       
     </section>
 </body>
 
