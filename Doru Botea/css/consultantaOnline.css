@@ -1,0 +1,93 @@
+#consultanta-online{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    /* align-items: center; */
+}
+
+#consultanta-online .form-container{
+   grid-column: 1 / 1;
+}
+
+.form-container form {
+    /* TODO display flex coloana aliniat pe mijloc */
+    display: flex;
+    flex-flow: column wrap;
+    align-self: center;
+    margin-left: auto;
+    justify-content: space-around;
+    width: 80%;
+    height: auto;
+    /* border: solid red; */
+    text-align: center;
+    background-color:transparent;
+    padding-top: 2em;
+}
+input::-webkit-input-placeholder , textarea::-webkit-input-placeholder{
+    color: #999;
+    transition: all .5s;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    /* color: red; */
+    transform: scale(0.00001)
+}
+/* TEST */
+
+.form-container input:focus ~ label,
+.form-container textarea:focus ~ label,
+.form-container input:valid ~ label,
+.form-container textarea:valid ~ label {
+    top: -12px;
+    left: 0;
+    color: green;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* TEST---TEST */
+textarea, input, label{
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    border: var(--inv) solid 2px;
+}
+textarea{
+    text-align: justify;
+    height: auto;
+    background-color:transparent;
+}
+
+.form-container form input, .form-container button{
+    margin: 0.2em 0 0.7em 0;
+    background-color: transparent;
+
+}
+#consultanta-online .content{
+justify-content: center;
+text-align: center;
+grid-column: 2 / 2 ;
+}
+
+#consultanta-online .section-head{
+    word-spacing: 1.2rem;
+    line-height: 2em;
+}
+#consultanta-online p{
+    display: inline-block;
+    font-size: 1rem;
+    width: 50%;
+    /*  */
+    text-indent: 1rem;
+    text-transform: none;
+}
+
+#consultanta-online div:nth-child(2){
+    background-color: var(--transparent);
+    /* border: 1px solid red; */
+}
+
+#consultanta-online h1, h2, h3{
+font-size: 16px;
+}

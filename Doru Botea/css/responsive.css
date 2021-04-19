@@ -1,0 +1,35 @@
+@media screen and (max-width: 800px){
+    .contact-header{
+      grid-template-columns: 2fr 2fr 0.5fr 0.5fr;
+    }
+    .other{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 647px) {
+    .top-header  {display: none;}
+   
+     #icon svg {
+      display: inline-block;
+      left: -30vw;
+      position: relative;
+      
+    }
+    .bot-header  nav ul  li{
+      display: none;
+    }
+    .phone-layout{display: block; }
+    .phone-layout img{
+      padding-right: 3rem;
+      position: relative;
+      /* display: inline-block; */
+      
+      height: 10vh;
+      float: right;
+    }
+  }
+  
+  .responsive {
+    
+  display: block !important;
+  }
