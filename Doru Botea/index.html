@@ -12,6 +12,9 @@
 
         gtag('config', 'G-Q1L29K7NK2');
     </script>
+
+    <!-- Jquery -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +25,9 @@
 
     <link rel="icon" type="image/png" href="./assets/images/favicon/android-chrome-512x512.png">
     <link rel="stylesheet" href="main.css" Content-Type="text/css">
-
-    <script src="./navbar.js" defer></script>
+    <link rel="stylesheet" href="./css/responsive.css" Content-Type="text/css">
+    <script src="./JS/cookies.js" defer></script>
+    <script src="./JS/navbar.js" defer></script>
 </head>
 
 <body>
@@ -114,8 +118,11 @@
 
             </nav>
         </div>
-
     </header>
+
+    <!-- COOKIES MODAL -->
+
+
     <section class="first-section">
         <div class="background"></div>
         <div class="content">
@@ -196,6 +203,7 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
     </section>
     <div class="background"></div>
     <section id="consultanta-online">
+
         <div class="form-container">
             <h1>Contact Rapid</h1>
             <form action="" method="post" netlify>
@@ -208,7 +216,8 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
                 <input required type="email" name="email" id="email" placeholder="Adresa de email">
 
                 <label for="phone">Telefon</label>
-                <input required type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="Telefon">
+                <input required type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                    placeholder="Telefon">
 
 
 
@@ -247,8 +256,14 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
 
             </div>
         </div>
-       
+
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Iuliu%20Maniu%20nr.47%20500091%20Bra%C8%99ov&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br></div>
+            </div>
     </section>
+        <!-- <div class="background small "></div> -->
 </body>
 
 </html>
