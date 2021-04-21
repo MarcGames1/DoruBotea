@@ -20,18 +20,22 @@
 
 html{
   width: 100vw !important;
-  overflow-x: hidden;
+ height: auto;
   scroll-behavior: smooth;
   font-family: sans-serif; 
+}
+body{
+  /* overflow-x: hidden; */
+  vertical-align: middle;
+  justify-content: center;
 }
   
 header{
   position: relative;
   text-align: center;
-  width: 100%;
   color:var( --primary-font-color );
 }
- 
+
 a{
   text-decoration: none;
 }
@@ -53,7 +57,7 @@ a{
 }
 .bot-header nav ul li a svg{
   width: 10%;
-  /* display: none; */
+  
 }
 .bot-header nav ul li a:hover:after {
   width: 100%;
@@ -61,7 +65,7 @@ a{
 }
 
 .bot-header nav ul  li  a {
-  color: white;
+  color: var(--primary-font-color);
   text-decoration: none;
   text-transform: uppercase;
   
@@ -80,14 +84,14 @@ a{
 }
 
 .logo{
-
+position: relative;
   grid-column:1 / 1;
   width: 100%;
 }
 .logo img{
   
   padding: 1rem;
-  /* max-width:10rem; */
+ 
   max-height: 15vh;
 }
 
@@ -132,7 +136,7 @@ a{
 .contact a{
   text-align: center;
   /* vertical-align: middle; */
-  text-decoration: none;
+  /* text-decoration: none; */
   color: var(--primary-font-color);
 }
 
@@ -175,27 +179,41 @@ header {
 
 
 
-/*  FIRST SECTION */
-/* background */
 .content {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh !important; */
   position: relative;
   background-color: var(--transparent);
   z-index: 0;
+  
+}
+.content, .first-section-background, .first-section{
+  width: 100%;
 }
 
+.first-section .content{
+  height: 100vh;
+
+}
+
+.first-section .content:first-child{
+  text-align: center;
+}
 
 .background{
   overflow-y: hidden;
   width: 100vw;
-  height: 100vh;
+  height: 360vh;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   
+  
+}
+
+.background-animation, .overlay{
   animation-duration: 20s;
   animation-name: background;
   animation-direction: alternate;
@@ -205,24 +223,33 @@ header {
 
 
 
-/* / Background */
 
-/* Content */
-/* #servicii, .content, *, section{
-  background-attachment: fixed;
-} */
 .first-section .content{
+  align-items:center;
+  display: flex;
+  /* height: 100%; */
+  flex-direction: row;
+  justify-items: center ;
+  justify-content: center !important;
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 1.5;
 }
+
+.specializari::after{
+  display: block;
+  content: " ";
+  animation: changeText 5s ease-in-out 4s infinite normal both;
+}
+
 .name{
   color:var(--secondary-font-color)
 }
 .specializari{
   border-bottom: solid 1px var(--secondary-font-color);
-  
 }
+  
+  
 
 
 #balanta{
@@ -230,50 +257,43 @@ header {
 }
 section{
   color: var(--primary-font-color);
-  height: 100vh;
+ min-height: 100vh;
+  max-width: 100vw !important;
+}
   
-}
-.content, .first-section-background, .first-section{
-  width: 100%;
-}
+  
 
-.specializari::after{
-  display: block;
-  content: " test";
-  animation: changeText 5s ease-in-out 4s infinite normal both;
-}
 
-.content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
+
+
+
 .hero-text{
   padding-bottom: 2rem;
 }
 .main-cta{
-  /* padding-top: 2rem; */
   letter-spacing: 1.1rem;
 }
-/* /FIRST SECTION */
+  
 
-
-/* second Section */
 
 #servicii{
-  width: 100vw;
-  height: 100vh;
+
   z-index: 0;
   background-color: var(--primary-color-transparent);
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
-.blur{
-  filter: blur(5px);
-  
+.overlay{
+  background-size: 300%;
+  /* background-color: rgba(255, 255, 255, 0.205); */
+  position: absolute;
+  /* border: green 11px solid; */
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  filter: blur(35px);
 }
-.no-blur{
-  filter: blur(0px);
-}  
+
 
 .second-section{
   display: flex;
@@ -282,8 +302,8 @@ section{
 }
 
 .cards{
-  max-width: 90vw;
-  height: 90vh;
+  max-width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
@@ -300,3 +320,6 @@ section{
   font-weight: bold;
 }
 
+/* #section2blur{
+  width: 100vw;
+} */

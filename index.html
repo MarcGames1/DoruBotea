@@ -3,6 +3,7 @@
 <!-- TODO formular cu nr de telefon stilizare form si text rutare pagini si responsive -->
 
 <head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="232120a6-06bb-4c7f-ae49-764708456bf1" data-blockingmode="auto" type="text/javascript"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1L29K7NK2"></script>
     <script>
@@ -33,7 +34,10 @@
 <body>
     <header>
         <div class="top-header" id="top">
-            <div class="logo"><img src="./assets/images/logo.png" alt="logo"><a href="#"></a></div>
+            <a href="#">
+            <div class="logo"><img src="./assets/images/logo.png" alt="logo">
+            </a></div>
+
             <!-- <input type="checkbox" id="nav-toggle" class="nav-toggle"> -->
             <div class="contact-header">
                 <div class="contact email">
@@ -123,61 +127,19 @@
     <!-- COOKIES MODAL -->
 
 
+    <div class="background background-animation"></div>
     <section class="first-section">
-        <div class="background"></div>
         <div class="content">
-            <div>
+            <div class="appearFirstL">
 
-                <svg class="appearFirstR" id="balanta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 485 485"
-                    style="enable-background:new 0 0 485 485;" xml:space="preserve">
-                    <path fill="currentColor" d="M411.097,110H257.5V87.42c17.459-6.192,30-22.865,30-42.42c0-24.813-20.187-45-45-45s-45,20.187-45,45
-c0,19.555,12.541,36.228,30,42.42V110H73.903L0,272.057v3.259c0,46.068,37.479,83.548,83.548,83.548s83.548-37.479,83.548-83.548
-v-3.259L106.875,140H227.5v255h-72.241l-30,90h234.481l-30-90H257.5V140h120.625l-60.222,132.057v3.259
-c0,46.068,37.479,83.548,83.548,83.548S485,321.384,485,275.315v-3.259L411.097,110z M242.5,30c8.271,0,15,6.729,15,15
-s-6.729,15-15,15s-15-6.729-15-15S234.229,30,242.5,30z M83.548,328.863c-24.321,0-44.894-16.301-51.397-38.548h102.794
-C128.442,312.562,107.869,328.863,83.548,328.863z M128.77,260.315H38.327l45.222-99.164L128.77,260.315z M318.118,455H166.882
-l10-30h131.235L318.118,455z M401.452,161.151l45.222,99.164H356.23L401.452,161.151z M401.452,328.863
-c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,401.452,328.863z" />
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                </svg>
-
-                <h1 class="hero-text appearFirstL">
-                    Avocat <span class="name appearSecondL">Doru Botea</span>
+                <img src="./assets/images/svg/balanta intro.png" class="appearFirstR" id="balanta" alt="img" >
+                <h1 class="hero-text">
+                    Avocat <span class="name">Doru Botea</span>
                     <br class="line" />
                     <span class="specializari">Profesionalism si Incredere</span>
                 </h1>
 
-                <a class="main-cta btn from-left appearSecondR" href="#servicii">vedeti mai multe</a>
+                <a class="main-cta btn from-left" href="#servicii">vedeti mai multe</a>
 
             </div>
         </div>
@@ -185,7 +147,8 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
     </section>
 
     <section class="second-section" id="servicii">
-        <div class="background blur"></div>
+        <div class="background background-animation"></div>
+        <div class="blur overlay"></div>
         <div class="cards">
 
             <a class="btn from-center servicii penal" href="/penal"><span>Drept Penal</span></a>
@@ -201,7 +164,7 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
             <a class="btn from-center servicii administrativ" href="/administrativ"><span>Drept Administrativ</span></a>
         </div>
     </section>
-    <div class="background"></div>
+    <!-- <div class="background background-animation"></div> -->
     <section id="consultanta-online">
 
         <div class="form-container">
@@ -216,7 +179,7 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
                 <input required type="email" name="email" id="email" placeholder="Adresa de email">
 
                 <label for="phone">Telefon</label>
-                <input required type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+                <input required type="tel" name="phone" id="phone" pattern="[0-9]{10}"
                     placeholder="Telefon">
 
 
@@ -225,7 +188,10 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
 
                 <!-- <label for="comments">Descrieti Cauza</label> -->
                 <textarea required name="comments" id="comments" rows="10" placeholder="Descrieti Cauza"></textarea>
-
+                <fieldset>
+                <input required type="checkbox" name = "gdpr">
+                <label id="gdpr-label" for="gdpr"><a href="/pages/gdpr.html">GDPR</a></label>
+                </fieldset>
                 <button class="btn from-right" type="submit">Trimiteti!</button>
             </form>
         </div>
@@ -257,13 +223,11 @@ c-24.321,0-44.894-16.301-51.397-38.548h102.794C446.346,312.562,425.772,328.863,4
             </div>
         </div>
 
-        <div class="mapouter">
-            <div class="gmap_canvas"><iframe id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Iuliu%20Maniu%20nr.47%20500091%20Bra%C8%99ov&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br></div>
-            </div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="1024" height="420" id="gmap_canvas" src="https://maps.google.com/maps?q=Strada%20Iuliu%20Maniu%2047%20Bra%C8%99ov%20500091&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:right;height:420px;width:1024px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:420px;width:1024px;}</style></div></div>
     </section>
-        <!-- <div class="background small "></div> -->
+       <footer>
+
+       </footer>
 </body>
 
 </html>

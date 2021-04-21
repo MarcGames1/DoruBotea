@@ -1,3 +1,15 @@
+@media screen and (max-width: 1052px){
+  .contact svg{
+    display: block;
+    margin:auto;
+    
+  }
+
+  .logo{
+    height: 70%
+  }
+}
+
 @media screen and (max-width: 800px){
     .contact-header{
       grid-template-columns: 2fr 2fr 0.5fr 0.5fr;

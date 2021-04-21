@@ -1,10 +1,11 @@
 #consultanta-online{
+    max-width: 90vw;
     display: grid;
-    grid-template-columns: 3fr 3fr ;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr auto;
     align-items: center;
     justify-content: space-around;
-    grid-gap: 1em;
+    grid-gap: 1.5em;
     /* margin-top: 2rem; */
     /* align-items: center; */
 }
@@ -19,8 +20,10 @@
    align-self: center;
    justify-self: center;
    border: solid 5px rgba(255, 255, 255, 0.7);
-   width: 50%;
+   /* width: 50%; */
    /* margin-right: auto; */
+   width: 90%;
+   padding-top: 2em;
 }
 
 .form-container{
@@ -29,7 +32,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color:var(--transparent)
+    background-color:var(--transparent);
 }
 .form-container h1{
     text-align: center;
@@ -44,7 +47,7 @@
     align-self: center;
     margin-bottom: 1em;
     justify-content: space-around;
-    width: 90%;
+    width: 100%;
     height: auto;
     /* border: solid red; */
     text-align: center;
@@ -73,6 +76,10 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
 }
 label{
     display: none;
+}
+
+#gdpr-label{
+    display: inline-block;
 }
 /* TEST---TEST */
 textarea, input, label{
