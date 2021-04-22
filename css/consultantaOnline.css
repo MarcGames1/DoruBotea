@@ -2,10 +2,10 @@
     max-width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-content: space-around;
-    grid-gap: 1.5em;
+    /* grid-gap: 1.5em; */
     /* margin-top: 2rem; */
     /* align-items: center; */
 }
@@ -13,22 +13,24 @@
 #consultanta-online .background{
     height: auto;
 }
-
+#consultanta-online .form-container, #consultanta-online .description{
+    align-self: center;
+    justify-self: center;
+    /* border: solid 5px rgba(255, 255, 255, 0.7); */
+    /* width: 50%; */
+    /* margin-right: auto; */
+    /* width: 90%; */
+    padding-top: 2em;
+}
 #consultanta-online .form-container{
    grid-column: 1 / 2;
    grid-row: 1 / 2;
-   align-self: center;
-   justify-self: center;
-   border: solid 5px rgba(255, 255, 255, 0.7);
-   /* width: 50%; */
-   /* margin-right: auto; */
-   width: 90%;
-   padding-top: 2em;
+ 
 }
 
 .form-container{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,6 +38,8 @@
 }
 .form-container h1{
     text-align: center;
+    justify-self: center;
+    vertical-align: middle;
 }
 .form-container form {
     align-self: center;
@@ -46,7 +50,7 @@
     flex-flow: column wrap;
     align-self: center;
     margin-bottom: 1em;
-    justify-content: space-around;
+    /* justify-content: space-between; */
     width: 100%;
     height: auto;
     /* border: solid red; */
@@ -84,8 +88,8 @@ label{
 /* TEST---TEST */
 textarea, input, label{
     width: 100%;
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
     align-self: center;
     text-align: center;
     border: var(--inv) solid 2px;
@@ -96,8 +100,13 @@ textarea{
     background-color:transparent;
 }
 
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
 .form-container form input, .form-container button{
-    margin: 0.2em 0 0.7em 0;
+    /* margin: 0.2em 0 0.7em 0; */
     background-color: transparent;
 
 }
@@ -107,8 +116,9 @@ justify-content: center;
 text-align: center;
 grid-column: 2 / 3 ;
 grid-row: 1 / 1;
-border: solid 1px red;
-width: 90%;
+/* border: solid 1px red; */
+background-color: rgba(245, 222, 179, 0.2);
+width: 100%;
 
 }
 
@@ -117,13 +127,7 @@ width: 90%;
     word-spacing: 1.2rem;
     line-height: 2em;
 }
-#consultanta-online p{
-    display: inline-block;
-    font-size: 1rem;
-    width: 50%;
-    text-indent: 1rem;
-    text-transform: none;
-}
+
 
 #consultanta-online div:nth-child(2){
     background-color: var(--transparent);
@@ -134,3 +138,23 @@ width: 90%;
     font-size: 16px;
 }
 */
+#consultanta-online p{
+    text-align: justify;
+    /* border: wheat 5px solid ; */
+    color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0; 
+    }
+
+    #consultanta-online .section-head{
+        word-spacing: 1.2rem;
+        line-height: 2em;
+    }
+    .description{
+        padding: 1em;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.7) !important;
+    }
+    .paragraphs ,#gdpr-label{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
