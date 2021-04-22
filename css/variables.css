@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 :root{
-    /* --def: #96B7C4; 	 */
-      /* --inv: #fff; */
+ --decorativeFont:'Dancing Script', cursive;
   
     --def:black;
     --inv:#ab8356;
@@ -14,10 +15,3 @@
   --transparent:rgba(0, 0, 0, 0.7);
   }
 
-
-  h1{
-
-  }
-  h2{
-    
-  }

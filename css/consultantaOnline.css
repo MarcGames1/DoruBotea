@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+/* font-family: 'Dancing Script', cursive; */
 #consultanta-online{
     max-width: 90vw;
     display: grid;
@@ -40,8 +44,10 @@
     text-align: center;
     justify-self: center;
     vertical-align: middle;
+    font-family:'Dancing Script', cursive;
 }
 .form-container form {
+    
     align-self: center;
     border: white solid 2px;
     /* background-color:var(--transparent); */
@@ -88,21 +94,35 @@ label{
 /* TEST---TEST */
 textarea, input, label{
     width: 100%;
-    color: rgba(0, 0, 0, 0.2);
+    
     font-size: 1.5rem;
     align-self: center;
     text-align: center;
     border: var(--inv) solid 2px;
+    font-family: var(--decorativeFont);
 }
 textarea{
     text-align: justify;
     height: auto;
     background-color:transparent;
+    
 }
 
-fieldset{
-    display: flex;
-    flex-direction: column;
+fieldset {
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+}
+fieldset label a{
+    font-size: 1rem;
+    color: black;
+   transition: color .5s;
+    
+
+}
+
+fieldset label a:hover{
+    text-decoration:underline solid var(--secondary-font-color) ;
+    color:blue;
 }
 
 .form-container form input, .form-container button{
@@ -122,39 +142,26 @@ width: 100%;
 
 }
 
-/* 
-#consultanta-online .section-head{
-    word-spacing: 1.2rem;
-    line-height: 2em;
-}
 
-
-#consultanta-online div:nth-child(2){
-    background-color: var(--transparent);
-    border: 1px solid red;
-}
-
-#consultanta-online h1, h2, h3 , #consultanta-online .form-container h1{
-    font-size: 16px;
-}
-*/
 #consultanta-online p{
     text-align: justify;
-    /* border: wheat 5px solid ; */
+    
     color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0; 
     }
 
     #consultanta-online .section-head{
         word-spacing: 1.2rem;
         line-height: 2em;
+        font-family: var(--decorativeFont);
     }
     .description{
         padding: 1em;
         width: 100%;
+        height: 100%;
         background-color:rgba(0, 0, 0, 0.7) !important;
     }
     .paragraphs ,#gdpr-label{
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     }
