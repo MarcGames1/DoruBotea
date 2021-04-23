@@ -16,12 +16,18 @@
   }
 }
 
-@media screen and (max-width: 810px){
+@media screen and (max-width: 813px){
     .contact-header{
       grid-template-columns: 2fr 2fr 0.5fr 0.5fr;
     }
 
+    .top-header{
+      height: auto;
+    }
 
+    .top-header .logo{
+      display: none;
+    }
     #consultanta-online{
      
         display: flex;
@@ -33,6 +39,12 @@
       height: auto;
     }
   }
+  @media screen and (max-width: 715px){
+    .contact svg{display: none;}
+    .contact a span{ font-size: 1rem;}
+    .main-cta{letter-spacing: 0em;}
+  }
+
   @media screen and (max-width: 647px) {
     .top-header  {display: none;}
    
@@ -44,12 +56,21 @@
     }
     .phone-layout .contact{
       position: absolute;
-      margin-left: 30%;
+      /* margin-left: 30%; */
+    }
+
+    .contact a span:last-of-type{
+      /* display: none; */
     }
     .bot-header  nav ul  li{
       display: none;
     }
-    .phone-layout{display: block; }
+    .phone-layout{
+      height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     }
     .phone-layout img{
       
       position: relative;
@@ -66,4 +87,19 @@
   z-index: 10;
   background-color: var(--secondary-color);
   display: block !important;
+  }
+  .phone-layout .phone{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0%;
+    vertical-align: middle;
+  }
+
+  @media screen and (max-width: 647px){
+    .main-cta, .hero-text{
+      font-size: 1rem;
+    }
   }
