@@ -55,6 +55,7 @@
     .top-header  {display: none;}
    
      #icon svg {
+     
       display: inline-block;
       /* float: left; */
       z-index: 10;

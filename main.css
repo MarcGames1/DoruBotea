@@ -5,6 +5,7 @@
 @import url(./css/consultantaOnline.css);
 /* @import url(./css/responsive.css); */
 @import url(./css/map.css);
+@import url(./css/typography.css);
 
 
 *, *:before, *:after {
@@ -212,12 +213,13 @@ header {
 .background{
   overflow-y: hidden;
   width: 100vw;
-  height: 460vh;
+  height: 560vh;
   position: absolute;
   z-index: -2;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   
   
 }
@@ -248,7 +250,7 @@ header {
 .specializari::after{
   display: block;
   content: " ";
-  animation: changeText 5s ease-in-out 4s infinite normal both;
+  animation: changeText 7s linear 4s infinite normal both;
 }
 
 .name{
@@ -266,7 +268,7 @@ header {
 }
 section{
   color: var(--primary-font-color);
- min-height: 100vh;
+ /* min-height: 100vh; */
   max-width: 90vw !important;
   margin-left: auto;
 }
@@ -307,30 +309,31 @@ section{
 
 .second-section{
   display: flex;
+  flex-flow:column nowrap;
   align-items: center;
-  justify-content:space-around;
+  justify-content:space-between;
   width: 100%;
 }
 
 .cards{
   width: 100%;
-  height: 100vh;
+  height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5px;
 
 
   font-family: var(--decorativeFont);
 }
 
-.servicii{
+.servicii-btn{
   background-color: var(--primary-color-transparent);
   color: var(--primary-font-color);
   /* height: 100%; */
 }
 
-.servicii span{
-  font-size: 1.5rem;
+.servicii-btn span{
+  font-size: 0.7rem;
   font-weight: bold;
 }
 
