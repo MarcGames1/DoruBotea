@@ -1,26 +1,31 @@
-#consultanta-online .content{
+#consssultanta-online .content{
     justify-self: right;
-justify-content: center;
-text-align: center;
-grid-column: 2 / 3 ;
-grid-row: 1 / 1;
-/* border: solid 1px red; */
-background-color: rgba(245, 222, 179, 0.2);
-width: 100%;
-
-}
-
+    justify-content: center;
+    text-align: center;
+    grid-column: 2 / 3 ;
+    grid-row: 1 / 1;
+    /* border: solid 1px red; */
+    background-color: rgba(245, 222, 179, 0.2);
+    width: 100%;
+    
+    }
+    
+    .servicii-detalii p{
+        padding: 2em;
+        
+    }
 
 p{
     text-align: justify;
-    
+
     color: #adb7bd; font-family: 'Lucida Sans', Arial, sans-serif; font-size: 16px; line-height: 26px; text-indent: 30px; margin: 0; 
-    }
+}
 
      .section-head{
-        word-spacing: 1.2rem;
+        /* word-spacing: 1.2rem; */
         line-height: 2em;
         font-family: var(--decorativeFont);
+        padding: auto;
     }
     .description{
         padding: 1em;
