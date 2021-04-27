@@ -412,6 +412,7 @@ section{
 
 
 .servicii-container img{
-  width: 30%;
-  height: 30%;
+  max-width: 30%;
+  max-height: 30%;
+  min-width: auto;
 }
