@@ -20,7 +20,10 @@
   .contact a span {
     font-size: 1rem
   }
-
+  #servicii{
+    
+    width: 100%;
+  }
   .servicii-container .content{
     flex-direction: column;
     align-items: center;
@@ -43,7 +46,7 @@
     }
 
     .top-header .logo{
-      display: none;
+      /* display: none; */
     }
     #consultanta-online{
      
