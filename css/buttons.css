@@ -49,16 +49,17 @@ text-transform: capitalize;
 font-size: 2em;
 
 
+/* content: 'aflati mai multe'; */
+background: var(--secondary-font-color);
+transition-delay: .35s;
 
-	/* content: 'aflati mai multe'; */
-	background: var(--secondary-font-color);
-	transition-delay: .35s;
 }
 
 .btn:hover:after .servicii{
 	content: 'aflati mai multe';
 	background: var(--secondary-font-color);
 	transition-delay: .35s;
+	
 }
 
 /* From Top */
@@ -201,7 +202,8 @@ font-size: 2em;
 
 }
 .from-center:hover span{
-display: none;
+display: hidden;
+z-index: -9;
 }
 /* ARROW */
 

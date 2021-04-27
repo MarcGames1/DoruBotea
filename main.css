@@ -296,7 +296,7 @@ section{
   overflow-x: hidden;
 }
 .overlay{
-  background-size: 800%;
+  /* background-size: 800%; */
   /* background-color: rgba(255, 255, 255, 0.205); */
   position: absolute;
   /* border: green 11px solid; */
@@ -318,12 +318,29 @@ section{
 .cards{
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-self: center;
+  /* justify-self: center; */
+  margin: auto;
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
   gap: 5px;
 
 
   font-family: var(--decorativeFont);
+}
+#servicii{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-self: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  
+  
 }
 
 .servicii-btn{
@@ -331,6 +348,11 @@ section{
   color: var(--primary-font-color);
   /* height: 100%; */
 }
+
+ .servicii-btn, .servicii-btn:hover{
+  max-width: 100%;
+  min-width: 300px;
+ } 
 
 .servicii-btn span{
   font-size: 0.7rem;

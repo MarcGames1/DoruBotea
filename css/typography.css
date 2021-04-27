@@ -9,7 +9,9 @@
     width: 100%;
     
     }
-    
+    .btn{
+        text-transform: uppercase;
+    }
     .servicii-detalii p{
         padding: 2em;
         
