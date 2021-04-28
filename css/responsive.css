@@ -33,13 +33,20 @@
     
     flex-direction: column;
   }
+
+  @supports(padding: max(0px)) {
+    .post {
+        padding-left: max(12px, env(safe-area-inset-left));
+        padding-right: max(12px, env(safe-area-inset-right));
+    }
+}
   @keyframes background {
     0% {
-      background-image: url('../assets/images/background1\ small.jpg.jpg');
+      background-image: url('../assets/images/background1\ small.jpg');
     }
   
     16%{
-      background-image: url('../assets/images/background1\ small.jpg.jpg');
+      background-image: url('../assets/images/background1\ small.jpg');
       
     }
     32%{
@@ -51,15 +58,15 @@
     }
     
     64%{
-      background-image: url('../assets/images/background3\ small.jpg.jpg');
+      background-image: url('../assets/images/background3\ small.jpg');
     }
   
     80%{
-      background-image: url('../assets/images/background3\ small.jpg.jpg');
+      background-image: url('../assets/images/background3\ small.jpg');
     }
   
     100%{
-      background-image: url('../assets/images/background1\ small.jpg.jpg');
+      background-image: url('../assets/images/background1\ small.jpg');
     }
   
     

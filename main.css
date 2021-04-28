@@ -229,6 +229,7 @@ header {
   
   position: fixed;
   z-index: -2;
+  background-image: url('../assets/images/background1.jpg'), url('../assets/images/background2.jpg'),url('../assets/images/background3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   /* background-attachment: scroll; */
@@ -416,4 +417,25 @@ section{
   max-width: 30%;
   max-height: 30%;
   min-width: auto;
+}
+
+.Phone-cta{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: crimson;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0%;
+}
+
+.phone-cta .phone{
+  background-color: green;
+}
+
+.phone-cta .email{
+  background-color: rosybrown;
 }
