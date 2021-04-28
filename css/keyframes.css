@@ -89,6 +89,7 @@
     }
 }
 
+
 @keyframes background {
     0% {
       background-image: url('../assets/images/background1.jpg');
@@ -96,6 +97,7 @@
   
     16%{
       background-image: url('../assets/images/background1.jpg');
+      
     }
     32%{
       background-image: url('../assets/images/background2.jpg');

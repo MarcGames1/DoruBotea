@@ -33,7 +33,37 @@
     
     flex-direction: column;
   }
+  @keyframes background {
+    0% {
+      background-image: url('../assets/images/background1\ 960x641.jpg');
+    }
   
+    16%{
+      background-image: url('../assets/images/background1\ 960x641.jpg');
+      
+    }
+    32%{
+      background-image: url('../assets/images/background2.jpg');
+    }
+  
+    48%{
+      background-image: url('../assets/images/background2.jpg');
+    }
+    
+    64%{
+      background-image: url('../assets/images/background3.jpg');
+    }
+  
+    80%{
+      background-image: url('../assets/images/background3.jpg');
+    }
+  
+    100%{
+      background-image: url('../assets/images/background1\ 960x641.jpg');
+    }
+  
+    
+  }
 }
 
 @media screen and (max-width: 813px){
