@@ -35,31 +35,31 @@
   }
   @keyframes background {
     0% {
-      background-image: url('../assets/images/background1\ 960x641.jpg');
+      background-image: url('../assets/images/background1\ small.jpg.jpg');
     }
   
     16%{
-      background-image: url('../assets/images/background1\ 960x641.jpg');
+      background-image: url('../assets/images/background1\ small.jpg.jpg');
       
     }
     32%{
-      background-image: url('../assets/images/background2.jpg');
+      background-image: url('../assets/images/background2\ small.jpg');
     }
   
     48%{
-      background-image: url('../assets/images/background2.jpg');
+      background-image: url('../assets/images/background2\ small.jpg');
     }
     
     64%{
-      background-image: url('../assets/images/background3.jpg');
+      background-image: url('../assets/images/background3\ small.jpg.jpg');
     }
   
     80%{
-      background-image: url('../assets/images/background3.jpg');
+      background-image: url('../assets/images/background3\ small.jpg.jpg');
     }
   
     100%{
-      background-image: url('../assets/images/background1\ 960x641.jpg');
+      background-image: url('../assets/images/background1\ small.jpg.jpg');
     }
   
     
