@@ -75,6 +75,10 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
     /* color: red; */
     transform: scale(0.00001)
 }
+
+form input, form textarea{
+    border-bottom: var(--secondary-font-color) 2px solid;
+}
 /* TEST */
 
 .form-container input:focus ~ label,

@@ -252,6 +252,7 @@ header {
 
 .first-section .content{
   align-items:center;
+  position: relative;
   display: flex;
   width: 90vw;
   flex-direction: row;
@@ -262,10 +263,9 @@ header {
   line-height: 1.5;
 }
 
-.specializari::after{
+.dinamic{
+  position: relative;
   display: block;
-  content: " ";
-  animation: changeText 7s linear 4s infinite normal both;
 }
 
 .name{
@@ -430,7 +430,7 @@ section{
   position: sticky;
   position: -webkit-sticky;
   bottom: 0%;
-  top: 88%;
+  top: 90%;
   text-align: center;
   z-index: 4;
 }

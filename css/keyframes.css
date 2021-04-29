@@ -20,32 +20,10 @@
     animation: appearR 2s ease-in-out 1.7s 1 normal forwards;
   }
   
-  @keyframes changeText{
-    0%{
-      content: " drept penal";
-    }
-    16%{
-      content: " dreptul familiei";
-    }
-    32%{
-      content: " drept civil";
-    }
-    48%{
-      content: " malpraxis medical";
-    }
-    64%{
-      content: " dreptul muncii";
-    }
-    80%{
-      content: " executari silite";
-    }
-    100%{
-      content: " drept penal";
-    }
-    
-  }
+
   
-  @keyframes appearL{
+
+  @-webkit-keyframes appearL{
     from{
       transform: translateX(-100vw);
       opacity: 0;
@@ -67,7 +45,7 @@
     }
   }
   
-  @keyframes appearR{
+  @-webkit-keyframes appearR{
     from{
       transform: translateX(100vw);
       opacity: 0;
@@ -90,7 +68,90 @@
 }
 
 
-@keyframes background {
+@-webkit-keyframes background {
+    0% {
+      background-image: url('../assets/images/background1.jpg');
+      background-position: left;
+    }
+  
+    16%{
+      background-image: url('../assets/images/background1.jpg');
+      background-position: right;
+      
+    }
+    32%{
+      background-image: url('../assets/images/background2.jpg');
+      background-position: left;
+    }
+  
+    48%{
+      background-image: url('../assets/images/background2.jpg');
+      background-position: right;
+    }
+    
+    64%{
+      background-image: url('../assets/images/background3.jpg');
+    }
+  
+    80%{
+      background-image: url('../assets/images/background3.jpg');
+      background-position: right;
+    }
+  
+    100%{
+      background-image: url('../assets/images/background1.jpg');
+    }
+  
+    
+  }
+ 
+  
+  @-webkit-keyframes appearL{
+    from{
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    
+    25%{
+      
+      opacity: 0.25;
+    }
+    
+    75%{
+      transform: translateX(25vw);
+      opacity: 0.25;
+    }
+    
+    to{
+      transform: translateX(0vw);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes appearR{
+    from{
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    
+    25%{
+      
+      opacity: 0.25;
+    }
+    
+    75%{
+      transform: translateX(-25vw);
+      opacity: 0.25;
+    }
+    
+    to{
+      transform: translateX(0vw);
+      opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes background {
     0% {
       background-image: url('../assets/images/background1.jpg');
       background-position: left;
