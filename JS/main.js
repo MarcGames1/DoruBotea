@@ -1,6 +1,5 @@
 const textContent = [" drept penal", " dreptul familiei", " drept civil",  " malpraxis medical", " dreptul muncii", " executari silite" ]
 let index = 0
-setInterval(changeText, 3000);
 
 
 function changeText(){
@@ -8,6 +7,7 @@ function changeText(){
     document.querySelector(".dinamic").innerText= textContent[index]
 }
 
+setInterval(changeText, 3000);
 
 
 

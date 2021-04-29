@@ -34,6 +34,20 @@
     flex-direction: column;
   }
 
+  .whatsapp-cta{
+    left: 85vw;
+    
+  }
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    .whatsapp-cta{
+      transform: scale(0.5);
+      left: 89%;
+    }
+ 
+  }
+  
+
   @supports(padding: max(0px)) {
     .post {
         padding-left: max(12px, env(safe-area-inset-left));
