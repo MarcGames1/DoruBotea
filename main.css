@@ -468,3 +468,25 @@ color: white;
 width: 100%;
 height: 100%;
 }
+
+.hidden, .hover, .whatsapp-cta:hover, .buttonTop:hover{
+  transition-duration: 3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: .5s ;
+}
+
+.hidden{
+  opacity: 0;
+  transition: opacity;
+}
+
+  
+
+.whatsapp-cta:hover, .buttonTop:hover{
+  
+  transform:scale(1.1);
+  transition:transform;
+}
+
+.hover{
+}

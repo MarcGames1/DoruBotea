@@ -42,6 +42,7 @@
     /* CSS specific to iOS devices */ 
     .whatsapp-cta{
       transform: scale(0.5);
+
       left: 89%;
     }
  
