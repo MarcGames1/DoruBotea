@@ -83,7 +83,7 @@ function addButtons() {
   removeClass(upArrow, "hidden");
   removeClass(whatsapp, "hidden");
   addClass(upArrow, "appearFirstR");
-  addClass(whatsapp, "appearSecondR");
+  // addClass(whatsapp, "appearSecondR");
 }
 
 function removeButtons() {

@@ -210,6 +210,7 @@ z-index: -9;
 /* TODO WHATSAPP FLOATING BUTTON */
 .Whats-app{
 	background-image: url(../assets/images/Social/whatsapp-icon.svg);
+
 }
 .buttonTop{
 	padding: 1em;
@@ -226,9 +227,16 @@ z-index: -9;
   right: auto;
   bottom:20%;
   top:70%;
+  z-index: 4;
   
 }
-
+.buttonTop img{
+	transition: transform;
+	transition-duration: .5s;
+}
+.buttonTop:hover img{
+	transform: translateY(-.5em);
+}
 /* .arrow {
 	position: absolute;
 	left: 0.2rem;
