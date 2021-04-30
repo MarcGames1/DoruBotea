@@ -24,7 +24,7 @@ const sections = document.querySelectorAll("section")
 const options = {
     root: null,
     rootMargin: "0%",
-    treshold:  1,
+    treshold: [ 0, 0.25, 0.5, 0.75, 1,]
   
   };
   
@@ -55,8 +55,8 @@ sections.forEach(section =>{
   })
 
 
-  function removeClass (element, className)  {element.classList.remove(className)}
-  function addClass (element, className)  {element.classList.add(className)}
+  function removeClassOnElement (element, className)  {element.classList.remove(className)}
+  function addClassOnElement (element, className)  {element.classList.add(className)}
 
   function CheckSection(elementClass){
       switch(elementClass){
@@ -80,13 +80,13 @@ sections.forEach(section =>{
   }
 
 function addButtons() {
-  removeClass(upArrow, "hidden");
-  removeClass(whatsapp, "hidden");
-  addClass(upArrow, "appearFirstR");
+  removeClassOnElement(upArrow, "hidden");
+  removeClassOnElement(whatsapp, "hidden");
+  addClassOnElement(upArrow, "appearFirstR");
   // addClass(whatsapp, "appearSecondR");
 }
 
 function removeButtons() {
-  addClass(upArrow, "hidden");
-  addClass(whatsapp, "hidden");
+  addClassOnElement(upArrow, "hidden");
+  addClassOnElement(whatsapp, "hidden");
 }

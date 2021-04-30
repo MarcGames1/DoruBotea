@@ -476,8 +476,7 @@ height: 100%;
 }
 
 .hidden{
-  opacity: 0;
-  transition: opacity;
+  display: none;
 }
 
   
@@ -488,5 +487,6 @@ height: 100%;
   transition:transform;
 }
 
-.hover{
+.whatsapp-cta div a span{
+  font-size: .7rem;
 }
