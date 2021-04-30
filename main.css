@@ -431,19 +431,56 @@ section{
   position: sticky;
   position: -webkit-sticky;
   bottom: 0%;
-  top: 90%;
+  top: 85%;
   text-align: center;
   z-index: 4;
 }
 
-.phone-cta .phone{
-  background-color: white;
+#buttom-phone, #buttom-email{
+  min-width: 50%;
+
+background-position: left;
+background-size: contain;
+background-repeat: no-repeat;
+transition: all 1.1s ;
+}
+#buttom-phone span:first-of-type{
+
+  font-size: 1.7rem;
+  
+  /* color: red; */
 }
 
-.phone-cta .email{
-  background-color: rosybrown;
+#buttom-phone{
+  /* font-weight: bolder; */
+  background-image: url(./assets/images/icons/phone.svg);
+  background-color: green;
+}
+#buttom-phone span{
+  font-size: 1rem;
+  padding: 0;
 }
 
+#buttom-email span{
+font-size: 1rem;
+}
+#buttom-email{
+  font-size: 1rem;
+  min-width: 50%;
+  background-image: url(./assets/images/icons/mail.svg);
+}
+
+#buttom-phone span, #buttom-email span{
+  transition: all 1.1s ;
+}
+#buttom-phone:hover span, #buttom-email:hover span{
+  transform: scale(1.1);
+  text-shadow: 2px 2px black;
+}
+
+#buttom-phone:hover, #buttom-email:hover{
+  background-position: 10%;
+}
 
 .whatsapp-cta{
   position: sticky;
