@@ -101,9 +101,7 @@
       height: auto;
     }
 
-    .top-header .logo{
-      /* display: none; */
-    }
+    
     #consultanta-online{
      
         display: flex;
@@ -122,6 +120,9 @@
   }
 
   @media screen and (max-width: 647px) {
+    header h1:first-child{
+      display:  none;
+    }
     .top-header  {display: none;}
    
      #icon svg {
@@ -135,6 +136,9 @@
     .phone-layout .contact{
       position: absolute;
       /* margin-left: 30%; */
+    }
+    .phone-layout span:first-of-type{
+      display: block;
     }
     
 
