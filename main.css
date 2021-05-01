@@ -438,6 +438,7 @@ transition: all 1.1s ;
 #buttom-phone a , #buttom-email a {
 display: grid;
 grid-auto-flow: column;
+grid-template-columns: 1fr 9fr;
 }
 
 
@@ -462,7 +463,7 @@ grid-auto-flow: column;
   height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: left;
+  background-position: center;
 }
 #buttom-phone span{
   font-size: 1rem;
@@ -470,8 +471,9 @@ grid-auto-flow: column;
 }
 
 #buttom-email span{
-font-size: 1rem;
+font-size: 100%;
 }
+
 #buttom-email{
   font-size: 1rem;
   min-width: 50%;
