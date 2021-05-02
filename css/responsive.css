@@ -35,14 +35,14 @@
   } */
 
   .servicii-wrapper{
-    width: 100%;
+   max-width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-items: center;
   }
   .servicii-container{
-    max-width: 80%;
+    max-width: 100%;
     
   }
 
@@ -53,6 +53,10 @@
   #buttom-email span{
     font-size: 50%;
     }
+
+    @supports not(-webkit-touch-callout: none){
+     
+    }
     
   @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
@@ -61,7 +65,7 @@
 
       left: 89%;
     }
- 
+   
   }
   
 

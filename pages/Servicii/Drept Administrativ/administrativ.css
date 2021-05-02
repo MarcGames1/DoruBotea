@@ -1,0 +1,14 @@
+@import "/css/secondaryPages.css";
+
+:root{
+    --background_image: url(./administrativ.jpg);
+}
+
+
+section div{
+    background-image: var(--background_image);
+}
+
+  
+
+    

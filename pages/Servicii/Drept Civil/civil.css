@@ -1,0 +1,15 @@
+@import "/css/secondaryPages.css";
+
+:root{
+    --background_image: url(./civil.jpg);
+}
+
+
+section div{
+    background-image: var(--background_image);
+}
+
+  
+ul{
+    list-style-type: none;
+}
