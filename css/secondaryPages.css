@@ -41,3 +41,4 @@ li{
     list-style-position: inside;
 }
         
+@media only screen and (orientation: portrait) {section div{height: 2vh;}}
