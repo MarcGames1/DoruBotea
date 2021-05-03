@@ -174,10 +174,13 @@
     .phone-layout img{
       
       position: relative;
-      /* display: inline-block; */
+      /* transform: scale(.5); */
       
       height: 10vh;
       /* float: right; */
+    }
+    .phone-layout .bars{
+      transform: scale(.5);
     }
   }
   
