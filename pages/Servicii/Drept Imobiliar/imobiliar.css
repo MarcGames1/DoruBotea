@@ -1,9 +1,1 @@
 @import "/css/secondaryPages.css";
-:root{
-    --background_image: url(./imobiliar.jpg);
-}
-
-
-section div{
-    background-image: var(--background_image);
-}

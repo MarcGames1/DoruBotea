@@ -1,12 +1,4 @@
 @import "/css/secondaryPages.css";
-:root{
-    --background_image: url(./muncii.jpg);
-}
-
-
-section div{
-    background-image: var(--background_image);
-}
 
 .categorie h2{
     display: block;
