@@ -219,7 +219,7 @@ footer{
   z-index: 5;
 }
 .site-footer {
-  margin-top: 100px; /* Remove */
+  /* margin-top: 100px; Remove */
 	position: relative;
 	background-color:#1A1F24;
 	width: 100%;	
@@ -244,7 +244,7 @@ footer{
 }
 
 .site-footer .grid-container a {
-	color: #A2845C;
+	color: var(--secondary-font-color);
 	text-decoration: none;
 	font-size: 15px;
 	line-height: 16.25px;
@@ -252,7 +252,7 @@ footer{
 
 .site-footer .grid-item {
 	padding: 10px;
-	color: #A2845C;
+	color: var(--secondary-font-color);
 }
 
 
@@ -265,7 +265,7 @@ footer{
 .site-footer .container hr { 
 	display: block; 
 	height: 1px;
-	border: 0; border-top: 1px solid #A2845C;
+	border: 0; border-top: 1px solid var(--secondary-font-color);
 	margin: 1px; 
 	padding: 0; 
 }
@@ -273,7 +273,7 @@ footer{
 .site-footer .container p {
 	font-size: 14px;
 	text-align: right;
-	color: #A2845C;
+	color: var(--secondary-font-color);
 	font-weight: 500;
 }
 
@@ -301,25 +301,28 @@ footer{
 }
 
 
-.site-footer .grid-container .grid-item .social-buttons a i{
+.site-footer .grid-container .grid-item .social-buttons a img{
 	transition: 0.3s ease-in;
 }
 
-.site-footer .grid-container .grid-item .social-buttons a:hover i {
-	background: linear-gradient(45deg,#A2845C,#A2845C);
+.site-footer .grid-container .grid-item .social-buttons a:hover img {
+	background: linear-gradient(45deg,var(--secondary-font-color),var(--secondary-font-color));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	transform: scale(1.5);
 }
 
 .circle-icon {
-    background: #A2845C;
+    background: var(--secondary-font-color);
     padding:12px;
     border-radius: 50%;
 }
 
 
-
+.grid-item .social-buttons img{
+  width: 100%;
+  height: 100%;
+}
 /*------------------------------------------------------------------
 [ Screen Sizes] */
 
