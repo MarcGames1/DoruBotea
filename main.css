@@ -217,6 +217,7 @@ height: 100%;
 /* FOOTER */
 footer{
   z-index: 5;
+  width: 100%;
 }
 .site-footer {
   /* margin-top: 100px; Remove */
@@ -278,16 +279,16 @@ footer{
 }
 
 .site-footer .container .logo-img {
-	width: 180px;
+	max-width: 130px;
 	height: 140px;
 	cursor: pointer;
 }
 
-.site-footer .grid-container .grid-item .social-buttons {
+.site-footer .grid-container .grid-item .sso {
 	padding-top: 20px;
 }
 
-.site-footer .grid-container .grid-item .social-buttons a {
+.site-footer .grid-container .grid-item .sso a {
 	display: inline-flex;
 	text-decoration: none;
 	font-size: 30px;
@@ -301,11 +302,11 @@ footer{
 }
 
 
-.site-footer .grid-container .grid-item .social-buttons a img{
+.site-footer .grid-container .grid-item .sso a img{
 	transition: 0.3s ease-in;
 }
 
-.site-footer .grid-container .grid-item .social-buttons a:hover img {
+.site-footer .grid-container .grid-item .sso a:hover img {
 	background: linear-gradient(45deg,var(--secondary-font-color),var(--secondary-font-color));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -319,7 +320,7 @@ footer{
 }
 
 
-.grid-item .social-buttons img{
+.grid-item .sso img{
   width: 100%;
   height: 100%;
 }
