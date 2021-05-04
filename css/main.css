@@ -1,13 +1,13 @@
-@import url(./css/navBar.css);
-@import url(./css/buttons.css);
-@import url(./css/variables.css);
-@import url(./css/icons.css);
-@import url(./css/keyframes.css);
-@import url(./css/consultantaOnline.css);
+@import url(navBar.css);
+@import url(buttons.css);
+@import url(variables.css);
+@import url(icons.css);
+@import url(keyframes.css);
+@import url(consultantaOnline.css);
 /* @import url(./css/responsive.css); */
-@import url(./css/map.css);
-@import url(./css/typography.css);
-@import url(./css/footer.css);
+@import url(map.css);
+@import url(typography.css);
+@import url(footer.css);
 
 *, *:before, *:after {
 	box-sizing: border-box;

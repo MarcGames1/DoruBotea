@@ -1,4 +1,4 @@
-@import '/main.css';
+@import 'main.css';
 
 header, section{
     margin:auto
@@ -41,4 +41,4 @@ li{
     list-style-position: inside;
 }
         
-@media only screen and (orientation: portrait) {section div{height: 2vh;}}
+@media only screen and (orientation: portrait) {section div img{height: auto; max-width: 100%;}}
