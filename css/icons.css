@@ -1,4 +1,4 @@
-.penal {
+/* .penal {
     background-image: url(../assets/images/svg/penal.png);
 }
 
@@ -20,7 +20,7 @@
 
 .executari {
     background-image: url(../assets/images/svg/executari.png);
-}
+} */
 
 .imobiliar {
     background-image: url(../assets/images/svg/ballance\ symbol.png)
@@ -40,15 +40,10 @@
 
 .administrativ,
 .bancar,
-.civil,
 .contraventional,
 .imobiliar,
-.imobiliar,
-.executari,
-.familial,
-.malpraxis,
-.muncii,
-.penal {
+.imobiliar
+ {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,7 +57,7 @@
 
     .servicii-btn::after{
         transform-origin: top;
-        transform: scaleY(0.01);
+        transform: scaleY(0.1);
         font-size: .0001rem;
         
 
@@ -83,9 +78,9 @@
     /* z-index: 0; */
     font-size: .7rem;
    transition: all;
-   transition-duration: 1s;
+   transition-duration: .5s;
    transition-timing-function: ease-in-out;
-   transition-delay: 1s;
+   transition-delay: .0s;
    transform-origin: middle;
    content: "Vedeti mai multe";
 

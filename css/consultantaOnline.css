@@ -1,6 +1,6 @@
 
 
-/* font-family: 'Dancing Script', cursive; */
+
 #consultanta-online{
     max-width: 90vw;
     display: grid;
@@ -8,9 +8,7 @@
     grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-content: space-around;
-    /* grid-gap: 1.5em; */
-    /* margin-top: 2rem; */
-    /* align-items: center; */
+   
 }
 
 #consultanta-online .background{
@@ -19,10 +17,7 @@
 #consultanta-online .form-container, #consultanta-online .description{
     align-self: center;
     justify-self: center;
-    /* border: solid 5px rgba(255, 255, 255, 0.7); */
-    /* width: 50%; */
-    /* margin-right: auto; */
-    /* width: 90%; */
+    
     padding-top: 2em;
 }
 #consultanta-online .form-container{
@@ -32,13 +27,13 @@
 }
 
 .form-container{
-    /* padding-top: 1em; */
+   
     display: flex;
-    /* align-items: center; */
+  
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color:var(--transparent); */
+  
     background-color: wheat;
 }
 .form-container h1{
@@ -53,16 +48,15 @@
     
     align-self: center;
     border: white solid 2px;
-    /* background-color:var(--transparent); */
-    /* TODO display flex coloana aliniat pe mijloc */
+    
     display: flex;
     flex-flow: column wrap;
     align-self: center;
     margin-bottom: 1em;
-    /* justify-content: space-between; */
+    
     width: 100%;
     height: auto;
-    /* border: solid red; */
+   
     text-align: center;
     background-color:wheat;
     padding-top: 2em;
@@ -72,22 +66,20 @@ input::-webkit-input-placeholder , textarea::-webkit-input-placeholder{
     transition: all .5s;
 }
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    /* color: red; */
+  
     transform: scale(0.00001)
 }
 
 form input, form textarea{
     border-bottom: var(--secondary-font-color) 2px solid;
 }
-/* TEST */
+
 
 .form-container input:focus ~ label,
 .form-container textarea:focus ~ label,
 .form-container input:valid ~ label,
 .form-container textarea:valid ~ label {
-    /* top: -12px;
-    left: 0; */
-    /* color: green; */
+    
     font-size: 1rem;
     font-weight: bold;
 }
@@ -98,10 +90,10 @@ label{
 #gdpr-label{
     display: inline-block;
 }
-/* TEST---TEST */
+
 textarea, input, label{
     width: 100%;
-    /* border-bottom: solid 1px black; */
+    
     font-size: 1.5rem;
     align-self: center;
     text-align: center;
@@ -133,7 +125,7 @@ fieldset label a:hover{
 }
 
 .form-container form input, .form-container button{
-    /* margin: 0.2em 0 0.7em 0; */
+
     background-color: transparent;
 }
 
