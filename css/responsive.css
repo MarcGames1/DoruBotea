@@ -22,10 +22,13 @@
     align-items: center;
     flex-direction: column;
     width: 100% !important;
+    
   }
   .secondary-cards{
     max-width: none;
-    width: 100% ;
+    width: 80% ;
+    margin-bottom:1em;
+    
   }
 }
 
@@ -88,7 +91,15 @@
 
       left: 89%;
     }
-   
+      
+   .cards{
+     gap: 10px;
+    
+   }
+   .secondary-cards{
+    /* border: 5px solid black */
+    margin:1em;
+   }
   }
   
 
