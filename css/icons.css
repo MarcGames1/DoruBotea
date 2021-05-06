@@ -73,16 +73,17 @@
 .familial:hover::after,
 .malpraxis:hover::after,
 .muncii:hover::after,
-.penal:hover::after{
+.penal:hover::after, .card-container:hover::after{
     transform: scaleY(1);
     /* z-index: 0; */
-    font-size: .7rem;
+    font-size: 1rem;
    transition: all;
    transition-duration: .5s;
    transition-timing-function: ease-in-out;
    transition-delay: .0s;
    transform-origin: middle;
    content: "Vedeti mai multe";
+   z-index: 2;
 
 }
 
@@ -116,4 +117,71 @@
 }
 .penal:hover::after{
     content:" September how men saw tolerably two behaviour arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on. "
+} */
+
+
+
+.cards-large{
+    margin: 2em;
+    display: flex;
+    width: 100%;
+    min-height: 20vh;
+    /* height: 100vh; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* border: blue solid 3px */
+}
+
+.cards-large .card-container{
+    padding: 0 0;
+    position: relative;
+    max-width: 30%;
+    width: 13%;
+    max-height: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    /* border-right:  2px solid white; */
+    box-sizing: content-box;
+    padding: 1rem;
+    
+
+
+    /* transition: all;
+    transition-duration: 15s;
+    transition-delay: .1s; */
+
+    background-color: var(--primary-color);
+}
+
+.cards-large .card-container  img{
+position: relative;
+margin: auto;
+max-width: 100%;
+max-height: 70%;
+justify-self: flex-start;
+align-self: center;
+display: block;
+
+
+}
+.cards-large .card-container  h1{
+display: block;
+justify-self: baseline;
+max-height: 30%;
+font-size: .9rem;
+margin-top: 10%;
+color: white;
+
+}
+.card-container:hover::after{font-size: 1.3rem;}
+.cards-large .card-container:hover h1, .cards-large .card-container:hover img{
+    display: hidden;
+}
+
+/* .card-container:hover::after, .card-container:hover::after{
+    position:absolute;
+    content:" ";
+    display: hidden;
+    
 } */
