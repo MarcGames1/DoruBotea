@@ -187,13 +187,8 @@
       position: relative;
       
     }
-    .phone-layout .contact{
-      position: absolute;
-      /* margin-left: 30%; */
-    }
-    .phone-layout span:first-of-type{
-      display: block;
-    }
+  
+    
     
 
     .contact a span:last-of-type{
@@ -224,14 +219,14 @@
   
   .responsive {
   position: relative;
-  bottom: -15vh;
+  /* bottom: -15vh; */
   z-index: 10;
   background-color: var(--secondary-color);
   display: block !important;
   }
   .phone-layout .phone{
     display: flex;
-    width: 100%;
+    max-width: 80%;
     /* justify-content: space-between; */
     flex-direction: column;
     justify-content: space-around;
