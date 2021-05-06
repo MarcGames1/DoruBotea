@@ -27,7 +27,11 @@
   .secondary-cards{
     max-width: none;
     width: 80% ;
+    
+  }
+  .card-container, .secondary-cards{
     margin-bottom:1em;
+    
     
   }
 }
