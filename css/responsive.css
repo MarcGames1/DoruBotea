@@ -10,6 +10,25 @@
   }
 }
 
+@media screen and (max-width: 969px){
+  .cards-large .card-container{
+
+  width:300px;
+  height: 300px;
+  /* border: 3px red solid */
+  }
+
+  .cards{
+    align-items: center;
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .secondary-cards{
+    max-width: none;
+    width: 100% ;
+  }
+}
+
 @media screen and (max-width: 878px){
   .other{
     display: none;
@@ -33,6 +52,8 @@
     
     flex-direction: column;
   } */
+
+
 
   .servicii-wrapper{
    max-width: 100%;
@@ -60,6 +81,8 @@
     
   @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
+
+    *{background-attachment: scroll !important;}
     .whatsapp-cta{
       transform: scale(0.7);
 

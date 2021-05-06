@@ -84,90 +84,6 @@ section{
 
 
 
-.Phone-cta{
-  width: 100%;
-  height: 10%;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items:stretch;
-  justify-content:right;
-  background-color: crimson;
-  position: sticky;
-  position: -webkit-sticky;
-  bottom: 0%;
-  top: 92%;
-  text-align: center;
-  z-index: 4;
-}
-
-#buttom-phone, #buttom-email{
-  min-width: 50%;
-
-
-transition: all 1.1s ;
-}
-#buttom-phone span:first-of-type{
-
-  font-size: 1.7rem;
-  
-  /* color: red; */
-}
-#buttom-phone a , #buttom-email a {
-display: grid;
-grid-auto-flow: column;
-grid-template-columns: 1fr 9fr;
-}
-
-
-  
-#buttom-phone .cta-img{
-
-  background-image: url(./assets/images/icons/phone.svg);
-}
-
-#buttom-email .cta-img{
-  background-image: url(./assets/images/icons/mail.svg);
-
-}
-#buttom-phone{
-  
-  background-color: green;
-}
-
-.cta-img{
-  grid-column: 1 / 1;
-  width: auto;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-#buttom-phone span{
-  font-size: 1rem;
-  padding: 0;
-}
-
-#buttom-email span{
-font-size: 100%;
-}
-
-#buttom-email{
-  font-size: 1rem;
-  min-width: 50%;
-}
-
-#buttom-phone span, #buttom-email span{
-  transition: all 1.1s ;
-  grid-column:  2 / 2;
-}
-#buttom-phone:hover span, #buttom-email:hover span{
-  transform: scale(1.1);
-  text-shadow: 2px 2px black;
-}
-
-#buttom-phone:hover, #buttom-email:hover{
-  background-position: 10%;
-}
 
 .whatsapp-cta{
   position: sticky;
@@ -203,16 +119,90 @@ height: 100%;
   display: none;
 }
 
-  
-
-.whatsapp-cta:hover, .buttonTop:hover{
-  
-  transform:scale(1.1);
-  transition:transform;
+#buttom-phone{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items:center;
+  justify-content:right;
+  /* background-color: crimson; */
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0%;
+  top: 92%;
+  text-align: center;
+  z-index: 4;
+  bottom: 5%;
+  top:90%
 }
 
-.whatsapp-cta div a span{
-  font-size: .7rem;
+#buttom-phone{
+  width: 100%;
+
+
+transition: all 1.1s ;
+}
+#buttom-phone a span:first-of-type{
+
+  font-size: 1.7rem;
+  
+  /* color: red; */
+}
+#buttom-phone a {
+display: grid;
+grid-auto-flow: column;
+grid-template-columns: 1fr 9fr;
 }
 
+
+  
+#buttom-phone .cta-img{
+
+  background-image: url(./assets/images/icons/phone.png);
+}
+
+
+#buttom-phone{
+  
+  background-color: green;
+}
+
+.cta-img{
+  display: block;
+  width: 30%;
+  height: 100%;
+  /* grid-column: 1 / 1; */
+  width: auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+#buttom-phone span{
+  font-size: 1rem;
+  padding: 0;
+}
+
+#buttom-email span{
+font-size: 100%;
+}
+
+#buttom-email{
+  font-size: 1rem;
+  /* min-width: 50%; */
+}
+
+#buttom-phone span, #buttom-email span{
+  transition: all 1.1s ;
+  grid-column:  2 / 2;
+}
+#buttom-phone:hover span, #buttom-email:hover span{
+  transform: scale(1.1);
+  text-shadow: 2px 2px black;
+}
+
+#buttom-phone:hover, #buttom-email:hover{
+  background-position: 10%;
+}
 /* FOOTER */

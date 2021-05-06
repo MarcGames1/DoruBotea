@@ -22,20 +22,25 @@
     background-image: url(../assets/images/svg/executari.png);
 } */
 
-.imobiliar {
-    background-image: url(../assets/images/svg/ballance\ symbol.png)
+.imobiliar:hover:after {
+    /* background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 1.3rem;
+    font-weight: bold; */
+    background-image: url(../assets/images/svg/imobiliarW.png);
 }
 
-.contraventional {
-    background-image: url(../assets/images/svg/contraventional.png);
+.contraventional:hover:after {
+    background-image: url(../assets/images/svg/contraventionalW.png);
 }
 
-.bancar {
-    background-image: url(../assets/images/svg/bancar.png);
+.bancar:hover:after {
+    background-image: url(../assets/images/svg/bancarW.png);
 }
 
-.administrativ {
-    background-image: url(../assets/images/svg/administrativ.png);
+.administrativ:hover:after {
+    background-image: url(../assets/images/svg/bancarW.png);
 }
 
 .administrativ,
@@ -52,10 +57,13 @@
     background-size:contain;
     background-repeat: no-repeat;
     background-position: left;
+    border-right:none !important;
+   
+    
     
 }
 
-    .servicii-btn::after{
+    cards::after{
         transform-origin: top;
         transform: scaleY(0.1);
         font-size: .0001rem;
@@ -77,6 +85,8 @@
     transform: scaleY(1);
     /* z-index: 0; */
     font-size: 1rem;
+    font-weight: bold;
+    padding: 1em;
    transition: all;
    transition-duration: .5s;
    transition-timing-function: ease-in-out;
@@ -118,9 +128,13 @@
 .penal:hover::after{
     content:" September how men saw tolerably two behaviour arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on. "
 } */
+#servicii{
+    height: auto !important;
+}
 
-
-
+.card-container, .secondary-cards{
+    box-shadow: 10px 10px 5px var(--transparent);
+}
 .cards-large{
     margin: 2em;
     display: flex;
@@ -128,22 +142,32 @@
     min-height: 20vh;
     /* height: 100vh; */
     flex-flow: row wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
     /* border: blue solid 3px */
+    gap: 7px;
+    
 }
 
-.cards-large .card-container{
+.cards-large .card-container, .secondary-cards {
+display: flex !important ;
+flex-flow: column nowrap;
+
+
     padding: 0 0;
     position: relative;
     max-width: 30%;
     width: 13%;
     max-height: 20vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     display: block;
     /* border-right:  2px solid white; */
     box-sizing: content-box;
     padding: 1rem;
+    min-width: 141px;
+    min-height:150px ;
     
 
 
@@ -157,9 +181,9 @@
 .cards-large .card-container  img{
 position: relative;
 margin: auto;
-max-width: 100%;
-max-height: 70%;
-justify-self: flex-start;
+max-width: 50%;
+max-height: 50%;
+justify-self: normal;
 align-self: center;
 display: block;
 
@@ -167,7 +191,8 @@ display: block;
 }
 .cards-large .card-container  h1{
 display: block;
-justify-self: baseline;
+justify-self:baseline;
+align-self: center;
 max-height: 30%;
 font-size: .9rem;
 margin-top: 10%;
@@ -185,3 +210,24 @@ color: white;
     display: hidden;
     
 } */
+
+.secondary-cards{
+    min-width: 20%;
+    min-height: 100px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.secondary-cards:hover::after{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.secondary-cards .secondary{
+ color:var(--secondary-font-color);
+ font-size: 0.9rem;
+ font-weight: normal; 
+}

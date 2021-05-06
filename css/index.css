@@ -95,6 +95,7 @@ body{
   .cards{
     width: 100%;
     height: auto;
+    /* min-height: 55px; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -117,7 +118,8 @@ body{
     align-items: center;
     width: 100%;
     text-align: center;
-  
+    text-shadow: 10px 10px 5px var(--transparent);
+
     margin-top: 10%;
   
     z-index: 0;
@@ -173,7 +175,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./assets/images/ServiciiBG.jpg);
+    background-image: url(../assets/images/ServiciiBG.jpg);
     /* background-attachment:fixed; */
     position: relative;
   }
@@ -190,6 +192,7 @@ body{
     position: relative;
     content: "________";
     top: -1rem;
+    color:var(--secondary-font-color);
   }
    
 
