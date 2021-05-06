@@ -1,6 +1,6 @@
 footer{
     z-index: 5;
-    width: 100%;
+    width: 100% !important;
   }
   .site-footer {
     /* margin-top: 100px; Remove */
@@ -11,7 +11,7 @@ footer{
   }
   
   .site-footer .container {
-      max-width: 85%;
+      max-width: 98%;
       margin: 0 auto;
       position: relative;
       overflow: hidden;
@@ -92,6 +92,7 @@ footer{
   .site-footer .grid-container .grid-item .sso a:hover img {
       background: linear-gradient(45deg,var(--secondary-font-color),var(--secondary-font-color));
       -webkit-background-clip: text;
+      background-clip: inherit;
       -webkit-text-fill-color: transparent;
       transform: scale(1.5);
   }
@@ -145,7 +146,7 @@ footer{
   
       .site-footer .grid-container {
           display: grid;
-          grid-template-columns: 350px auto 350px;
+          grid-template-columns: 200px auto 350px;
       }
   
       .site-footer .grid-container .inner-grid-container{
