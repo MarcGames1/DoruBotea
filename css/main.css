@@ -35,7 +35,7 @@ html{
 
 
 
-.background{
+.b1ackground{
   overflow-y: hidden;
   width: 100vw;
   height: 100vh;
@@ -52,7 +52,7 @@ html{
 }
 
 
-.background-animation{
+.b1ackground-animation{
   animation-duration: 20s;
   animation-name: background;
   animation-direction: alternate;
@@ -130,11 +130,11 @@ height: 100%;
   position: sticky;
   position: -webkit-sticky;
   bottom: 0%;
-  top: 92%;
+ 
   text-align: center;
   z-index: 4;
   bottom: 5%;
-  top:90%
+  top:86%
 }
 
 #buttom-phone{
