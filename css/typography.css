@@ -1,14 +1,14 @@
-#consssultanta-online .content{
+/* #consssultanta-online .content{
     justify-self: right;
     justify-content: center;
     text-align: center;
     grid-column: 2 / 3 ;
     grid-row: 1 / 1;
-    /* border: solid 1px red; */
-    background-color: rgba(245, 222, 179, 0.2);
     width: 100%;
+
+} */
     
-    }
+    
     .btn{
         text-transform: uppercase;
     }
@@ -33,7 +33,7 @@ p{
         padding: 1em;
         width: 100%;
         height: 100%;
-        background-color:rgba(0, 0, 0, 0.7) !important;
+        /* background-color:rgba(0, 0, 0, 0.7) !important; */
     }
     .paragraphs ,#gdpr-label{
     display: flex;
