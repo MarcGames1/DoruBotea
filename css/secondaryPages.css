@@ -1,5 +1,7 @@
 @import 'main.css';
-
+html{  
+    background-color: black;
+}
 header, section{
     margin:auto
 }
@@ -12,7 +14,9 @@ header, section{
     background-blend-mode: overlay;
     background-attachment: fixed;
 }
-
+.categorie{
+    height: 80vh;
+}
 .categorie > div{
     position: relative;
     display: flex;
@@ -51,6 +55,7 @@ li{
 
 
    .contact2{
+       position: relative;
        display:grid;
        grid-template-columns: 1fr 1fr;
        gap: 10px;
