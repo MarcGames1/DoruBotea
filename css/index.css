@@ -49,7 +49,7 @@ body{
     align-items:center;
     position: relative;
     display: flex;
-    width: 90vw;
+    width: var(--site-width);
     flex-direction: row;
     justify-items: center ;
     justify-content: center ;

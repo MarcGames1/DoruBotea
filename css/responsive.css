@@ -92,6 +92,11 @@
   @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */ 
 
+    #buttom-phone{
+      bottom: 1%;
+      top:97%;
+    }
+
     *{background-attachment: scroll !important;}
     .whatsapp-cta{
       transform: scale(0.7);
@@ -121,37 +126,7 @@
         padding-right: max(12px, env(safe-area-inset-right));
     }
 }
-  @keyframes background {
-    0% {
-      background-image: url('../assets/images/background1\ small.jpg');
-    }
   
-    16%{
-      background-image: url('../assets/images/background1\ small.jpg');
-      
-    }
-    32%{
-      background-image: url('../assets/images/background2\ small.jpg');
-    }
-  
-    48%{
-      background-image: url('../assets/images/background2\ small.jpg');
-    }
-    
-    64%{
-      background-image: url('../assets/images/background3\ small.jpg');
-    }
-  
-    80%{
-      background-image: url('../assets/images/background3\ small.jpg');
-    }
-  
-    100%{
-      background-image: url('../assets/images/background1\ small.jpg');
-    }
-  
-    
-  }
 }
 
 @media screen and (max-width: 813px){
@@ -217,7 +192,7 @@
       position: relative;
       /* transform: scale(.5); */
       
-      height: 10vh;
+      height: 6vh;
       /* float: right; */
     }
     .phone-layout .bars{

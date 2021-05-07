@@ -52,13 +52,6 @@ html{
 }
 
 
-.b1ackground-animation{
-  animation-duration: 20s;
-  animation-name: background;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
 
 
 
@@ -72,7 +65,7 @@ html{
 section{
   color: var(--primary-font-color);
  /* min-height: 100vh; */
-  max-width: 90vw !important;
+  max-width: 96vw !important;
   margin-left: auto;
 }
   
@@ -121,46 +114,33 @@ height: 100%;
 
 #buttom-phone{
   width: 100%;
-  height: 10%;
+  max-height: var(--bar-heigth);
   display: flex;
-  flex-flow: column nowrap;
+  
   align-items:center;
-  justify-content:right;
+  justify-content: space-around;
+  /* justify-content:right; */
   /* background-color: crimson; */
   position: sticky;
   position: -webkit-sticky;
-  bottom: 0%;
+  bottom: 1%;
+  /* top: 93%; */
  
   text-align: center;
   z-index: 4;
-  bottom: 5%;
-  top:86%
+
+  transition: all 1.1s ;
 }
 
-#buttom-phone{
-  width: 100%;
 
-
-transition: all 1.1s ;
-}
-#buttom-phone a span:first-of-type{
-
-  font-size: 1.7rem;
-  
-  /* color: red; */
-}
-#buttom-phone a {
-display: grid;
-grid-auto-flow: column;
-grid-template-columns: 1fr 9fr;
+#buttom-phone a span{
+height: 100%;
+display: block;
+position: relative;
 }
 
 
   
-#buttom-phone .cta-img{
-
-  background-image: url(./assets/images/icons/phone.png);
-}
 
 
 #buttom-phone{
@@ -168,41 +148,25 @@ grid-template-columns: 1fr 9fr;
   background-color: green;
 }
 
-.cta-img{
-  display: block;
-  width: 30%;
-  height: 100%;
-  /* grid-column: 1 / 1; */
-  width: auto;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-}
+
 #buttom-phone span{
   font-size: 1rem;
   padding: 0;
 }
 
-#buttom-email span{
-font-size: 100%;
-}
 
-#buttom-email{
-  font-size: 1rem;
-  /* min-width: 50%; */
-}
 
-#buttom-phone span, #buttom-email span{
+
+#buttom-phone span{
   transition: all 1.1s ;
-  grid-column:  2 / 2;
+
 }
-#buttom-phone:hover span, #buttom-email:hover span{
+#buttom-phone:hover span{
   transform: scale(1.1);
   text-shadow: 2px 2px black;
 }
 
-#buttom-phone:hover, #buttom-email:hover{
+#buttom-phone:hover{
   background-position: 10%;
 }
 /* FOOTER */

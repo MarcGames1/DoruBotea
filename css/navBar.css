@@ -2,7 +2,7 @@ header{
     position: relative;
     text-align: center;
     color:var( --primary-font-color );
-    width: 90vw;
+    width: var(--site-width);
     margin-left: auto;
   }
   
@@ -130,7 +130,9 @@ header{
     position: relative;
   }
     
-    
+    .phone-layout{
+      height: var(--bar-heigth);
+    }
   
   .bot-header{
     background-color: var(--secondary-color);
