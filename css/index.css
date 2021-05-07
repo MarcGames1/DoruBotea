@@ -2,15 +2,16 @@
 
 
 .background{
-background-image: url('../assets/images/background1.jpg'), url('../assets/images/background2.jpg'),url('../assets/images/background3.jpg');
+background-image: url('../assets/images/background1.jpg'),
 }
 
 body{
+  background-image: url("");
     display: flex;
     flex-direction: column;
   }
   
-  header, .first-section, .second-section, #consultanta-online{
+  header, section, .first-section, .second-section, #consultanta-online{
     margin: auto;
   }
 
@@ -26,9 +27,14 @@ body{
     width: 100%;
   } */
   
-  .first-section .content{
-    height: 100vh;
-    font-family:var(--decorativeFont);
+  body, .first-section{
+    background-blend-mode: darken;
+    background-color: var(--transparent);
+    background-image: url("/assets/images/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
   
   }
   
@@ -38,6 +44,8 @@ body{
 
 
   .first-section .content{
+    height: 100vh;
+    font-family:var(--decorativeFont);
     align-items:center;
     position: relative;
     display: flex;

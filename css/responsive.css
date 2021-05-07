@@ -37,6 +37,9 @@
 }
 
 @media screen and (max-width: 878px){
+  body{
+    background-image: url(../assets/images/background1\ small.jpg);
+  }
   .other{
     display: none;
   }
@@ -95,7 +98,12 @@
 
       left: 89%;
     }
-      
+    .first-section{
+      background-image: url(../assets/images/background1\ small.jpg);
+    }
+      body{
+        background-size: contain;
+      }
    .cards{
      gap: 10px;
     
