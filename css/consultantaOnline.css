@@ -26,6 +26,11 @@
  
 }
 
+.form-container h1,
+.form-container input{
+    border-bottom: 2px solid var(--hover-color)
+}
+
 .form-container{
    
     display: flex;
@@ -33,21 +38,22 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  
-    background-color: wheat;
+  border: var(--hover-color) solid 7px;
+    background-color: var(--fundal-formular);
 }
 .form-container h1{
     text-align: center;
     justify-self: center;
     vertical-align: middle;
     font-family:var(--decorativeFont);
-    color: var(--primary-color);
+    color: var(--hover-color);
+
     
 }
 .form-container form {
     
     align-self: center;
-    border: white solid 2px;
+    /* border: white solid 2px; */
     
     display: flex;
     flex-flow: column wrap;
@@ -58,11 +64,11 @@
     height: auto;
    
     text-align: center;
-    background-color:wheat;
+    background-color:var(--fundal-formular);
     padding-top: 2em;
 }
 input::-webkit-input-placeholder , textarea::-webkit-input-placeholder{
-    color: #808080;
+    /* color: #808080; */
     transition: all .5s;
 }
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
@@ -70,10 +76,13 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
     transform: scale(0.00001)
 }
 
-form input, form textarea{
-    border-bottom: var(--secondary-font-color) 2px solid;
+form input {
+    /* border-bottom: var(--secondary-font-color) 2px solid; */
 }
-
+form textarea{
+    /* border: var(--secondary-font-color) 2px solid; */
+    /* border-top: none; */
+}
 
 .form-container input:focus ~ label,
 .form-container textarea:focus ~ label,
@@ -97,7 +106,7 @@ textarea, input, label{
     font-size: 1.5rem;
     align-self: center;
     text-align: center;
-    border: var(--inv) solid 2px;
+    border: var(--fundal-formular) solid 2px;
     font-family: var(--decorativeFont);
 }
 textarea{
@@ -108,20 +117,27 @@ textarea{
 }
 
 fieldset {
+    border: var(--fundal-formular) solid 2px;
+    cursor: pointer;
     display: grid;
     grid-template-columns: 8fr 1fr;
 }
 fieldset label a{
     font-size: 1rem;
-    color: black;
+    color: var(--primary-font-color);
+    cursor: pointer;
    transition: color .5s;
     
 
 }
+input[type = checkbox]:hover{
+    color: wheat;
+    cursor: pointer;
+}
 
 fieldset label a:hover{
     text-decoration:underline solid var(--secondary-font-color) ;
-    color:blue;
+    color:var(--secondary-font-color);
 }
 
 .form-container form input, .form-container button{
@@ -129,3 +145,6 @@ fieldset label a:hover{
     background-color: transparent;
 }
 
+input[type = button]{
+    color: white;
+}
