@@ -1,4 +1,5 @@
 @import "./main.css";
+/* @import "./map.css"; */
 
 
 .background{
@@ -245,4 +246,10 @@ body{
     max-height: 30%;
     min-width: auto;
     margin: 0 auto;
+  }
+
+
+  .mapouter{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
   }
