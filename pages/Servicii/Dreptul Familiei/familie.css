@@ -8,3 +8,6 @@
     display: block;
     margin: 2em 0;
 }
+.parallax{
+    background-image: url('./familie.jpeg');
+}

@@ -3,7 +3,6 @@
     --background_image: url(./contraventional.png);
 }
 
-
-section div{
-    background-image: var(--background_image);
+.parallax{
+    background-image: url('./contraventional.png');
 }

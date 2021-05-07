@@ -4,3 +4,6 @@
     list-style-type: none;
 }
   
+.parallax{
+    background-image: url('./civil.jpg');
+}
