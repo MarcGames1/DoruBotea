@@ -140,7 +140,7 @@
     display: flex;
     width: 100%;
     min-height: 20vh;
-    /* height: 100vh; */
+   min-height: 50vh;
     flex-flow: row wrap;
     /* justify-content: space-between; */
     align-items: center;
@@ -164,7 +164,7 @@ flex-flow: column nowrap;
     align-items: center;
     display: block;
     /* border-right:  2px solid white; */
-    box-sizing: content-box;
+    
     padding: 1rem;
     min-width: 141px;
     min-height:150px ;
@@ -194,8 +194,8 @@ display: block;
 justify-self:baseline;
 align-self: center;
 max-height: 30%;
-font-size: .9rem;
-margin-top: 10%;
+font-size: .8rem;
+/* margin-top: 10%; */
 color: white;
 
 }
