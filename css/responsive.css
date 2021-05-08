@@ -37,9 +37,7 @@
 }
 
 @media screen and (max-width: 878px){
-  body{
-    background-image: url(../assets/images/background1\ small.jpg);
-  }
+  
   .other{
     display: none;
   }

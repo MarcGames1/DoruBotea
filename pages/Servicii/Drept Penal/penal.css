@@ -1,3 +1,5 @@
+@import "/css/secondaryPages.css";
+
 .parallax{
-    background-image: url('./penal.jpg');
+    background-image: url('./penal.png');
 }
