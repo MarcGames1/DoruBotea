@@ -6,20 +6,15 @@ header, section{
     margin:auto
 }
 
-.parallax{
 
-    /* background-color: var(--transparent); */
-    
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%;
+.categorie .text{
+    width: 80vw;
 }
+    
+
 .text{
     display: block;
-    width: 80vw;
+    
     margin:5em auto;
     line-height: 2em;
 
@@ -31,25 +26,20 @@ header, section{
     padding: 10%;
 }
 
-.categorie div:first-child{
-    position: relative;
-    display: flex;
+.parallax{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+   
     width: 100%;
     height: 50vh;
-    min-height: 30vh;
-    flex-direction: column;
-    justify-content: top;
-    align-items: center;
-
-
+  
 }
 
-/* section > div > img{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    
-} */
+
 section{
     margin-top: 1em;
 }

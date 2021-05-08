@@ -169,4 +169,22 @@ position: relative;
 #buttom-phone:hover{
   background-position: 10%;
 }
+
+.h1-separator{
+  margin:1rem auto;
+  display: block;
+  text-align: center;
+}
+
+.h1-separator::before,
+.h1-separator::after{
+  /* border-bottom: solid 1px blue; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  content: "________";
+  top: -1rem;
+  color:var(--secondary-font-color);
+}
+ 
 /* FOOTER */
