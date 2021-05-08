@@ -168,8 +168,16 @@
       /* float: left; */
       z-index: 10;
       position: relative;
+
       
     }
+
+    .cards-large{
+      width: 100%;
+      /* display: block; */
+      flex-flow: column nowrap;
+    }
+      
   
     
     

@@ -151,7 +151,7 @@
 }
 
 .cards-large .card-container, .secondary-cards {
-display: flex !important ;
+display: flex;
 flex-flow: column nowrap;
 
 
@@ -162,7 +162,7 @@ flex-flow: column nowrap;
     max-height: 20vh;
     justify-content: space-between;
     align-items: center;
-    display: block;
+    
     /* border-right:  2px solid white; */
     
     padding: 1rem;
@@ -179,13 +179,14 @@ flex-flow: column nowrap;
 }
 
 .cards-large .card-container  img{
+    object-fit: scale-down;
 position: relative;
 margin: auto;
 max-width: 50%;
 max-height: 50%;
 justify-self: normal;
 align-self: center;
-display: block;
+/* display: block; */
 
 
 }
