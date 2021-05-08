@@ -4,24 +4,24 @@
 }
 
 
-:is(.text) h3,h4, li::marker, p:first-of-type, h2 {
+
+.text h3,
+.text h4,
+.text li::marker,
+.text p:first-of-type,
+.text h2 {
     color:var(--secondary-font-color);
 }
 
-:matches(.text) h3,h4, li::marker, p:first-of-type, h2 {
-    color:var(--secondary-font-color);
-}
-
-.text li::marker, li{
+.text li::marker,
+.text li{
     font-weight: bold;
 }
 
-:is(.text) h2, h3, h4,li{
-    font-size: 1em;
-    margin: 1em 0.5em;
-    text-align: center;
-}
-:matches(.text) h2, h3, h4{
+.text h2,
+.text h3,
+.text h4,
+.text li {
     font-size: 1em;
     margin: 1em 0.5em;
     text-align: center;
@@ -43,6 +43,6 @@
     }
 
     #contact{
-        grid-row: 2 / 2;
+        grid-row: 2 /2;
     }
 }

@@ -215,6 +215,7 @@ body{
     justify-content: center;
   }
   .servicii-container{
+   /* border: black solid 3px; */
     max-width: 25%;
   }
   
@@ -224,6 +225,9 @@ body{
     flex-direction: column;
   }
   
+  .servicii-container div a{
+    font-size: .8rem;
+  }
   /* .servicii-container:nth-child(even) .content{
     display: flex;
     flex-direction: row-reverse;
