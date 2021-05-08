@@ -34,10 +34,16 @@
     
     
   }
+  .contact2{
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  
+}
 }
 
 @media screen and (max-width: 878px){
-  
+ 
+
   .other{
     display: none;
   }

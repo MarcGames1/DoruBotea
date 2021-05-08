@@ -64,19 +64,14 @@ li{
     list-style-position: inside;
 }
         
-@media only screen and (orientation: portrait) {section div img{height: auto; max-width: 100%;}}
-
-
 
    .contact2{
        position: relative;
        display:grid;
+      
        grid-template-columns: 1fr 1fr;
        gap: 10px;
        align-items: center;
        justify-content: space-around;
    }
 
-   .form-container{
-       grid-column: 1 / 1;
-   }
