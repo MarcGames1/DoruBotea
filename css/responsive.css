@@ -37,8 +37,18 @@
   .contact2{
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
+  }
   
-}
+  article{
+    height: auto;
+ display: flex;
+ flex-flow: column;
+  }
+ 
+  .cobco img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 878px){
