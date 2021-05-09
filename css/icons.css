@@ -177,6 +177,10 @@ flex-flow: column nowrap;
 
     background-color: var(--primary-color);
 }
+.secondary-cards{
+    height: auto;
+}
+    
 
 .cards-large .card-container  img{
     object-fit: scale-down;
