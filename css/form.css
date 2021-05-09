@@ -1,6 +1,10 @@
 .form-container h1,
 .form-container input{
-    border-bottom: 2px solid var(--hover-color)
+    border-bottom: 2px solid var(--primary-font-color);
+}
+.form-container h1{
+    
+    color:var(--primary-font-color) !important;
 }
 
 .form-container{
@@ -10,7 +14,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  border: var(--hover-color) solid 7px;
+  border: var(--primary-font-color) solid 7px;
     background-color: var(--fundal-formular);
 }
 .form-container h1{
@@ -18,7 +22,7 @@
     justify-self: center;
     vertical-align: middle;
     font-family:var(--decorativeFont);
-    color: var(--hover-color);
+    color: var(--primary-font-color);
 
     
 }
@@ -48,7 +52,9 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
     transform: scale(0.00001)
 }
 
-
+::placeholder{
+    color: var(--primary-font-color);
+}
 
 .form-container input:focus ~ label,
 .form-container textarea:focus ~ label,
@@ -115,5 +121,5 @@ fieldset label a:hover{
 }
 
 input[type = button]{
-    color: white;
+    color: var(--secondary-font-color);
 }

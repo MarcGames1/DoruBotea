@@ -2,6 +2,7 @@
 .parallax{
     height: 100vh;
     background-image: url(../assets/contact-assets/brasov-sus.jpg);
+    background-size: cover;
 }
 body{
     width: 100%;
@@ -11,7 +12,7 @@ article{
     /* background-color: rgba(255, 255, 255, 0.7); */
     /* background-blend-mode:lighten; */
     margin: auto;
-    width: 95vw;
+    width: 99vw;
     /* border: red solid 5px; */
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -42,13 +43,13 @@ article h2{
 }
 article .form-container{
     border: none;
-    background-color: black;
+    background-color:var(--fundal-formular);
 }
  article .form-container h1{
      font-size: 1.4em;
  }   
 input{
-    background-color: black;
+    background-color: red;
 }
 
 .categorie{
