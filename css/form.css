@@ -1,6 +1,6 @@
 .form-container h1,
 .form-container input{
-    border-bottom: 2px solid var(--primary-font-color);
+    border-bottom: 4px #945345de solid ;
 }
 .form-container h1{
     
@@ -92,7 +92,7 @@ textarea{
 }
 
 fieldset {
-    border: var(--fundal-formular) solid 2px;
+    border: none;
     cursor: pointer;
     display: grid;
     grid-template-columns: 8fr 1fr;
@@ -102,17 +102,22 @@ fieldset label a{
     color: var(--primary-font-color);
     cursor: pointer;
    transition: color .5s;
-    
+    line-height: normal;
 
 }
 input[type = checkbox]:hover{
     color: wheat;
     cursor: pointer;
 }
-
+button[type="submit"] {
+    background: rgba(0, 128, 0, 0.7) !important;
+}
+button[type="submit"]:hover::after{
+    background: green;
+}
 fieldset label a:hover{
-    text-decoration:underline solid var(--secondary-font-color) ;
-    color:var(--secondary-font-color);
+    text-decoration:underline solid black ;
+    color:black;
 }
 
 .form-container form input, .form-container button{
