@@ -79,17 +79,18 @@ section{
 
 
 .whatsapp-cta{
-  position: sticky;
-  position:-webkit-sticky;
-  left: 94vw;
+  position: fixed;
+ 
+  right:-95%;
+  left:95%;
   top:30%;
-  bottom: 60%;
-  background-color: transparent;
-  display: inline-flex;
+  /* bottom: 60%; */
+  /* background-color: transparent; */
+  display:flex;
   max-width: 10px;
   max-height: 30px;
   z-index: 3;
-  display: flex;
+  
   color: white;
 }
 
@@ -97,7 +98,7 @@ section{
 text-decoration: none;
 color: white;
   }
-.whatsapp-cta div a svg{
+.whatsapp-cta div a {
 width: 100%;
 height: 100%;
 }
