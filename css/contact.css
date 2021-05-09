@@ -43,8 +43,10 @@ article h2{
 article .form-container{
     border: none;
     background-color: black;
-    
 }
+ article .form-container h1{
+     font-size: 1.4em;
+ }   
 input{
     background-color: black;
 }
