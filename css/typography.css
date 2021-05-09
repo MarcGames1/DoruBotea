@@ -12,11 +12,9 @@
     .btn{
         text-transform: uppercase;
     }
-    .servicii-detalii p{
-        padding: 2em;
-        
+    .servicii-detalii p {
+        padding: 2em 2em 0em 2em;
     }
-
 p{
     text-align: left;
 

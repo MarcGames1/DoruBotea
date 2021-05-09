@@ -46,8 +46,8 @@
 .administrativ,
 .bancar,
 .contraventional,
-.imobiliar,
 .imobiliar
+
  {
     display: flex;
     flex-direction: row;
