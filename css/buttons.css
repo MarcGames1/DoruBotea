@@ -213,26 +213,29 @@ width: 48px;
 }
 
 .whatsapp-cta div a {
-	display: flex;
+	/* display: flex; */
 	flex-flow: column nowrap;
 	margin: auto;
 }
 .buttonTop{
 	padding: 1em;
-	background-color: white;
+	transform-origin: center;
 	border-radius: 35px;
 	height: auto;
 	max-height: 3rem;
 	width: 3rem;
+	background-color: rgba(0, 0, 0, 0.8);
 	
   position: fixed;
   bottom: 10%;
   right: 0;
  
   
-  z-index: 4;
+  z-index: 14;
   
 }
+
+.buttonTop:hover{background-color: rgba(0, 0, 0, 0.8);}
 .buttonTop img{
 	transition: transform;
 	transition-duration: .5s;
@@ -240,5 +243,5 @@ width: 48px;
 	margin: auto;
 }
 .buttonTop:hover img{
-	transform: scale(1.1);
+	transform: scale(1.3);
 }

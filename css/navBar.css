@@ -12,7 +12,7 @@ header{
   
   .bot-header nav ul  li{
     display: inline-block;
-    padding: 1rem;
+    padding: .5rem 1rem;
     user-select: none;
   }
   .bot-header nav ul li a:after {
