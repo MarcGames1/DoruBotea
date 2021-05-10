@@ -171,11 +171,6 @@ position: relative;
   background-position: 10%;
 }
 
-.h1-separator{
-  margin:1rem auto;
-  display: block;
-  text-align: center;
-}
 
 .h1-separator::before,
 .h1-separator::after{

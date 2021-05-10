@@ -38,3 +38,22 @@ p{
     flex-direction: column;
     justify-content: space-between;
     }
+
+    .h1-separator{
+        margin:2rem auto;
+        display: block;
+        text-align: center;
+      }
+
+      .second-section h3{
+          line-height: 7rem;
+      }
+
+      #consultanta-online .description{
+          margin-top: 0;
+          padding-top: 0;
+      }
+      #consultanta-online .description p{
+        margin-top: 1em;
+        padding-top: 0;
+    }

@@ -19,11 +19,16 @@ header, section{
     line-height: 2em;
 
 }
+
+
+.text h1{
+    text-transform:uppercase;
+}
 .text p{
     text-indent: 2em;
 }
 .text ul{
-    padding: 10%;
+    margin: 0rem;
 }
 
 .parallax{
@@ -40,9 +45,7 @@ header, section{
 }
 
 
-section{
-    margin-top: 1em;
-}
+
 section h1{
     text-align: center;
     margin: 1em;
