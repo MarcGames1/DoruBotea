@@ -11,3 +11,7 @@
 .parallax{
     background-image: url('./Executari.jpg');
 }
+
+.text p{
+    margin: 1rem 0rem;
+}
