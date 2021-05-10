@@ -11,6 +11,9 @@
 }
 
 @media screen and (max-width: 969px){
+  .second-section h3{
+    line-height: 2.5rem;
+}
   .cards-large .card-container{
 
   width:300px;
