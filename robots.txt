@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://avocatdorubotea.ro/sitemap.xml
+Sitemap: https://avocatdorubotea.ro/sitemap.xml
