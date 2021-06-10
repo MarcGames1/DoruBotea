@@ -1,33 +1,7 @@
-/* .penal {
-    background-image: url(../assets/images/svg/penal.png);
-}
 
-.familial {
-    background-image: url(../assets/images/svg/familie.png);
-}
-
-.civil {
-    background-image: url(../assets/images/svg/civil.png);
-}
-
-.malpraxis {
-    background-image: url(../assets/images/svg/malpraxis.png);
-}
-
-.muncii {
-    background-image: url(../assets/images/svg/munca.png);
-}
-
-.executari {
-    background-image: url(../assets/images/svg/executari.png);
-} */
 
 .imobiliar:hover:after {
-    /* background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 1.3rem;
-    font-weight: bold; */
+   
     background-image: url(../assets/images/svg/imobiliarW.png);
 }
 
@@ -40,7 +14,7 @@
 }
 
 .administrativ:hover:after {
-    background-image: url(../assets/images/svg/bancarW.png);
+    background-image: url(../assets/images/svg/administrativW.png);
 }
 
 .administrativ,
@@ -97,37 +71,6 @@
 
 }
 
-/* .administrativ:hover::after{
-    content: "Boy desirous families prepared gay reserved add ecstatic say. Replied joy age visitor nothing cottage. Mrs door paid led loud sure easy read. Hastily at perhaps as neither or ye fertile tedious visitor. Use fine bed none call busy dull when. Quiet ought match my right by table means. Principles up do in me favourable affronting. Twenty mother denied effect we to do on. ";
-}
-
-.bancar:hover::after{
-    content:"Post no so what deal evil rent by real in. But her ready least set lived spite solid."
-}
-.civil:hover::after{
-    content:"Post no so what deal evil rent by real in. But her ready least set lived spite solid."
-}
-.contraventional:hover::after{
-    content:"Post no so what deal evil rent by real in. But her ready least set lived spite solid."
-}
-.imobiliar:hover::after{
-    content:"Post no so what deal evil rent by real in. But her ready least set lived spite solid."
-}
-.executari:hover::after{
-    content:"Post no so what deal evil rent by real in. But her ready least set lived spite solid."
-}
-.familial:hover::after{
-    content:"Post no so what deal evil rent by real in. But her ready least set lived spite solid."
-}
-.malpraxis:hover::after{
-    content:"Post no so what deal evil rent by real in. But her ready least set lived spite solid."
-}
-.muncii:hover::after{
-    content:"Post no so what deal evil rent by real in. But her ready least set lived spite solid. "
-}
-.penal:hover::after{
-    content:" September how men saw tolerably two behaviour arranging. She offices for highest and replied one venture pasture. Applauded no discovery in newspaper allowance am northward. Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on. "
-} */
 #servicii{
     height: auto !important;
 }
@@ -142,10 +85,8 @@
     min-height: 20vh;
    min-height: 50vh;
     flex-flow: row wrap;
-    /* justify-content: space-between; */
     align-items: center;
     justify-content: center;
-    /* border: blue solid 3px */
     gap: 7px;
     
 }
@@ -163,7 +104,6 @@ flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
     
-    /* border-right:  2px solid white; */
     
     padding: 1rem;
     min-width: 141px;
@@ -171,9 +111,6 @@ flex-flow: column nowrap;
     
 
 
-    /* transition: all;
-    transition-duration: 15s;
-    transition-delay: .1s; */
 
     background-color: var(--primary-color);
 }
@@ -190,7 +127,6 @@ max-width: 50%;
 max-height: 50%;
 justify-self: normal;
 align-self: center;
-/* display: block; */
 
 
 }
@@ -209,12 +145,7 @@ color: white;
     display: hidden;
 }
 
-/* .card-container:hover::after, .card-container:hover::after{
-    position:absolute;
-    content:" ";
-    display: hidden;
-    
-} */
+
 
 .secondary-cards{
     min-width: 20%;
